@@ -1,0 +1,2966 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="Content-Type" content="text/x-component .htc">
+<link rel="stylesheet" type="text/css" href="css\style.css">
+<link rel="stylesheet" type="text/css" href="css\tabs.css">
+<link rel="stylesheet" type="text/css" href="css\plot.css">
+<link rel="stylesheet" type="text/css" href="css\menu.css">
+<link rel="stylesheet" type="text/css" href="css\toggle.css">
+<link rel="stylesheet" type="text/css" href="js/smartspin/smartspinner.css">
+<link type="text/css" href="lib/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+<!--OVERLAY CSS-->
+
+<!--**********-->
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/extended_plot.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="js/tabs.js"></script>
+	<script language="javascript" type="text/javascript" src="js/combomenu.js"></script>
+	<script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script>
+	<script language="javascript" type="text/javascript" src="js/smartspin/smartspinner.js"></script>
+		<script language="javascript" type="text/javascript" src="js/toggle.js"></script>
+	<script type="text/javascript" src="js/raphael-min.js"></script>
+		
+	<!-- the mousewheel plugin - optional to provide mousewheel support -->
+<script type="text/javascript" src="lib/jquery.mousewheel.js"></script>
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="lib/jquery.jscrollpane.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
+	<!--OVERLAY SCRIPT-->
+		<link rel="stylesheet" type="text/css" href="js/simplemodal/css/basic.css">
+		<script type='text/javascript' src='js/simplemodal/js/simplemodal.js'></script>
+	<!--******-->
+	<script type="text/javascript" src="js/calibration.js"></script>
+</head>
+<body>
+
+
+<div id="outer-wrap">	
+	<div id="inner-wrap">
+		<div class="top-nav">
+			<div class="top-nav-content">
+				<div class="left-nav">
+				<ul class="left-menu">
+					<li><a href="#">My <span>Work</span><span class="title">Sample<span></a> <span class="separator">|</span></li>
+					<li>
+						<div style="display:inline-block;position:relative">
+						<div><a href="#" class="T9">Operator </a><div class="down-arrow"></div></div>
+						<ul style=" left: 0;padding: 0; position: absolute;top: 25px;display:none">
+							<li style="background-color: rgb(140, 140, 140); display: block; height: 30px"><a href="#" class="T9">Administrator </a></li>
+							<li  style="background-color: rgb(140, 140, 140); display: block; height: 30px"><a href="#" class="T9">Technician </a></li>
+						</ul>
+						</div>
+						<span class="separator">|</span>
+					</li>
+					<li><a href="#">?</a></li>			
+				</ul>
+				</div>
+				<div class="right-nav">
+					<div class="inline T9">abcd@abcd.com</div>
+					<div class="down-arrow"></div>
+			
+				</div>
+			</div>	
+	</div>
+	  
+		<div class="fac-con">
+			<div class="fac-content">
+				<div class="left-con">
+					<div class="arrow-box"></div>
+					<div class="breadcrumb-text T5">Facility</div>
+					<div class="breadcrumb-arrow"></div>
+					<div class="breadcrumb-text T5">North Well 1</div>
+					<div class="breadcrumb-arrow"></div>
+					<div class="breadcrumb-text T5">AGA3</div>
+				</div>
+				<div class="right-con">
+					<div class="refresh">Last Refreshed
+						<div class="time">12/28/12 at 10:00:30 AM
+						</div>
+					
+					</div>
+					<div class="monitor-btn"><a href="#"><span class="T9 monitor-text">Monitoring Off</span><div class="down-arrow"></div></a></div>
+				</div>
+           </div>				
+		</div>
+		 <div class="page">	
+	 <div class="page-content">	
+	  <div class="leftside">
+                        <div class="leftOverviewSection divRoundedCorner">
+                            <div class="leftOverviewHeaderSection">
+                                <div class="leftOverviewHeaderContent T3">
+                                    Overview</div>
+                            </div>
+							 <div class="leftOverviewImageSection ">
+							 <div class="image-placeholder">
+                              		<div class='imageContent'> 	
+                              			<table>
+                              				<tr style='color:red'>
+                              					<td>
+                              						<img src='images/overflow-arrow.png' class='overflowUpArrow'>
+                              					</td>
+                              					<td>
+                              						SP:
+                              					</td>
+                              					<td>
+                              						192.59 Psia
+                              					</td>
+                              				</tr>
+                              				<tr>
+                              					<td>
+                              						<img src='' class='overflowUpArrow'>
+                              					</td>
+                              					<td>
+                              						DP:
+                              					</td>
+                              					<td>
+                              						192.59 InH2O
+                              					</td>
+                              				</tr>
+                              				<tr>
+                              				<td>
+                              						<img src='' class='overflowUpArrow'>
+                              					</td>
+                              					<td>
+                              						Temp:
+                              					</td>
+                              					<td>
+                              						142.59 &deg;F
+                              					</td>
+                              				</tr>
+                              				<tr style='color:red'>
+                              					<td>
+                              						<img src='images/underflow-arrow.png' class='overflowUpArrow'>
+                              					</td>
+                              					<td>
+                              						Flow:
+                              					</td>
+                              					<td>
+                              						127.67 Scf/hr
+                              					</td>
+                              				</tr>
+                              			</table>
+                              		</div>
+                              </div>
+							 </div>
+                     
+                  
+                            <div class="leftOverviewEditableContentSection scroll-pane1">
+							     <div class="leftOverviewEditRow">
+                                    <div class='leftOverviewEditableTitle T8'>
+                                        Orifice Diameter
+                                    </div>
+                                    <div class='leftOverviewEditableValue T7'>
+                                       1.0
+                                       
+                                    </div>
+                                    <div class="overviewPen">
+										<img src="images/edit-pen.png" />
+									</div>
+									<div class="analysisTriangleEdit">
+										 <img src="images/table-edit-dark.png" />
+									</div>
+                                </div>
+								
+								<div class="leftOverviewEditRow">
+                                    <div class='leftOverviewEditableTitle T8'>
+                                        Pipe Diameter
+                                    </div>
+                                    <div class='leftOverviewEditableValue T7'>
+                                        2.067
+
+                                    </div>
+                                    <div class="overviewPen">
+										<img src="images/edit-pen.png" />
+									</div>
+									<div class="analysisTriangleEdit">
+										 <img src="images/table-edit-dark.png" />
+									</div>
+                                    
+                                </div>
+								
+								
+								   <div class="leftOverviewEditRow">
+                                    <div class='leftOverviewEditableTitle T8'>
+                                        SP Tap Location
+                                    </div>
+                                    <div class='leftOverviewEditableValue T7'>
+                                        Upstream
+                                        
+                                    </div>
+                                    <div class="overviewPen">
+										<img src="images/edit-pen.png" />
+									</div>
+									<div class="analysisTriangleEdit">
+										 <img src="images/table-edit-dark.png" />
+									</div>
+                                </div>
+                                
+								   <div class="leftOverviewEditRow">
+									<div class="leftOverviewEditableTitle T8">FPV Method</div>
+									<div class="leftOverviewEditableValue T7">AGA8 Gross 92</div>
+									<div class="overviewPen">
+										<img src="images/edit-pen.png" />
+									</div>
+									<div class="analysisTriangleEdit">
+										 <img src="images/table-edit-dark.png" />
+									</div>
+								
+				            	</div>
+								  <div class="leftOverviewEditRow">
+                                    <div class='leftOverviewEditableTitle T8'>
+                                        Calculation Type
+                                    </div>
+                                    <div class='leftOverviewEditableValue T7'>
+                                        AGA3-1985
+                                       
+                                    </div>
+                                    <div class="overviewPen">
+										<img src="images/edit-pen.png" />
+									</div>
+									<div class="analysisTriangleEdit">
+										 <img src="images/table-edit-dark.png" />
+									</div>
+                                </div>
+                                <div class="leftOverviewEditRow">
+                                    <div class='leftOverviewEditableTitle T8'>
+                                        Contract Hour
+                                    </div>
+                                    <div class='leftOverviewEditableValue T7'>
+                                        0
+                                    </div>
+                                    <div class="overviewPen">
+										<img src="images/edit-pen.png" />
+									</div>
+									<div class="analysisTriangleEdit">
+										 <img src="images/table-edit-dark.png" />
+									</div>
+                                </div>
+                             
+                              
+                           
+                                
+                             
+					
+					
+                                <div class='leftOverviewEndSpace'>
+                                    &nbsp;
+                                </div>
+                            </div>
+							          <div style='width: 100%; height: 5px; background-color: #444444;'>
+                                &nbsp;</div>
+							       <div class="leftOverviewContentSection scroll-pane">
+                                
+                                <div class=" dotbg">
+                                    <div class='leftOverviewNonEditableTitle T8'>
+                                        TubeId</div>
+                                    <div class='leftOverviewNonEditableValue T7'>
+                                        TotalFlow</div>
+                                    <div style='clear: both'>
+                                    </div>
+                                </div>
+                                
+                                
+                                <div class="leftOverviewDivEnclosingNonEditRows dotbg">
+                                    <div class='leftOverviewNonEditableTitle T8 '>
+                                        Yesterday's Volume</div>
+                                    <div class='leftOverviewNonEditableValue T7'>
+                                        566.73 MCF</div>
+                                    <div style='clear: both'>
+                                    </div>
+                                </div>
+                                <div class="leftOverviewDivEnclosingNonEditRows dotbg">
+                                    <div class='leftOverviewNonEditableTitle T8 '>
+                                        Today's Volume</div>
+                                    <div class='leftOverviewNonEditableValue T7'>
+                                        566.23 MCF</div>
+                                    <div style='clear: both'>
+                                    </div>
+                                </div>
+                                <div style='height: 15px; border-bottom: 1px solid #444;'>
+                                    &nbsp;
+                                </div>
+                             
+                            </div>
+						
+                        </div>
+                    </div>
+		</div>
+			 <div class="rightside">
+			<div class="htmltabs" >
+			<!-- The tabs -->
+			<ul  class="tabs ">
+				<li >
+					<a  href="#tab3">
+						RealTime
+					</a>
+				</li>
+				<li >
+					<a  href="#tab1">
+						Day	
+					</a>
+				</li>
+				<li >
+					<a  href="#tab2">
+						Log 
+					</a>
+				</li>
+			
+				<li >
+					<a  href="#tab4">
+						Event
+					</a>
+				</li>
+				<li >
+					<a  href="#tab5">
+						Analysis
+					</a>
+				</li>
+				<li >
+					<a  href="#tab6">
+						Calibration
+					</a>
+				</li>
+				<li >
+					<a  href="#tab7">
+						Configuration
+					</a>
+				</li>
+				<li >
+					<a  href="#tab8">
+						Orifice 
+					</a>
+				</li>
+				<li  class='lastTab' id='lastTab'>
+					 <a href="#lastTab" class="tabSelect" ></a></img>
+									<ul>
+										<li >										
+											<a href="#tab1">
+												Day	
+											</a>
+										</li>
+										<li >					
+											<a href="#tab2">
+												Log 
+											</a>
+										</li>
+										<li >					
+											<a href="#tab3">
+												RealTime
+											</a>
+										</li>
+										<li >					
+											<a href="#tab4">
+												Event
+											</a>
+										</li>
+										<li >				
+											<a href="#tab5">
+												Analysis
+											</a>
+										</li>
+										<li >				
+											<a href="#tab6">
+												Calibration
+											</a>
+										</li>
+										<li >				
+											<a  href="#tab7">
+												Configuration
+											</a>
+										</li>
+										<li >				
+											<a  href="#tab8">
+												Orifice 
+											</a>
+										</li>
+										
+									
+									</ul>
+										
+				</li>
+			
+			</ul>
+			<!-- tab 1 -->
+			<div class="tabsContent" id="tab1">
+			
+						<div style='display:inline-block' >
+							
+				
+							
+								<ul class="combo1">
+								<a class="initial" href="#">Day</a>
+								<li class="firstComboItem"><a href="#">3</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">10</a></li>
+								<li><a href="#">15</a></li>
+								<li><a href="#">20</a></li>
+								<li><a href="#">25</a></li>
+								<li><a href="#">30</a></li>
+								<li><a href="#">35</a></li>
+								<li class="lastComboItem"><a href="#">ALL</a></li>
+								</ul>
+				
+							
+						</div>
+
+							<div  style='display:inline-block'>	
+						
+							 			<ul class="combo1">
+									    <a class="initial" href="#">View</a>
+										<li class="firstComboItem"><a href="#">Grid</a></li>
+										<li class="lastComboItem"><a href="#">Graph</a></li> 							
+										</ul>
+															
+						</div>
+						<div id="graph">
+								<div id="placeholder1" class="placeHolder">
+								</div>
+						</div>
+						<div id="grid" class='tableOuterDiv' >
+							<div class="modernTable">
+								<!-- Table Heading Div-->
+								<div class="modTableHead">
+									<!--Date/Time,Description,Oldval,Newval,SN-->
+									<div class="modTableHeadCell textCell" width="30px"><span>Date/Time</span></div>
+									<div class="modTableHeadCell textCell"><span>DP</span></div>
+									<div class="modTableHeadCell numericCell"><span>SP</span></div>
+									<div class="modTableHeadCell numericCell"><span>TF</span></div>
+									<div class="modTableHeadCell numericCell" ><span>Volume</span></div>
+									<div class="modTableHeadCell numericCell" ><span>Ext</span></div>
+									<div class="modTableHeadCell numericCell" ><span>Energy</span></div>
+									<div class="modTableHeadCell numericCell" ><span>Alarms</span></div>
+									<div class="modTableHeadCell numericCell" ><span>DP Min</span></div>
+									<div class="modTableHeadCell numericCell" ><span>DP Max</span></div>						
+								</div>
+								<div class="modTableRow">
+									<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+									<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+									<div class="modTableCell textCell"><span>10.98</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+						
+								</div>
+								<div class="modTableRow">
+									<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+									<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+									<div class="modTableCell textCell"><span>10.98</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+							
+								</div>
+								<div class="modTableRow">
+									<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+									<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+									<div class="modTableCell textCell"><span>10.98</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+								
+								</div>
+								<div class="modTableRow">
+									<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+									<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+									<div class="modTableCell textCell"><span>10.98</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+								
+								</div>
+							</div>				
+						</div>
+			</div><!-- end of t1 -->
+			<!-- tab 2 -->
+			<div class="tabsContent " id="tab2">
+			<div style='display:inline-block' >
+							
+				
+							
+								<ul class="combo1">
+								<a class="initial" href="#">Day</a>
+								<li class="firstComboItem"><a href="#">3</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">10</a></li>
+								<li><a href="#">15</a></li>
+								<li><a href="#">20</a></li>
+								<li><a href="#">25</a></li>
+								<li><a href="#">30</a></li>
+								<li><a href="#">35</a></li>
+								<li class="lastComboItem"><a href="#">ALL</a></li>
+								</ul>
+				
+							
+						</div>
+
+							<div  style='display:inline-block'>	
+						
+							 			<ul class="combo1">
+									    <a class="initial" href="#">View</a>
+										<li class="firstComboItem"><a href="#">Grid</a></li>
+										<li class="lastComboItem"><a href="#">Graph</a></li> 							
+										</ul>
+															
+						</div>
+			<div class="tableOuterDiv_log">
+			<div class="modernTable">
+								<!-- Table Heading Div-->
+								<div class="modTableHead">
+									<!--Date/Time,Description,Oldval,Newval,SN-->
+									<div class="modTableHeadCell textCell" width="30px"><span>Date/Time</span></div>
+									<div class="modTableHeadCell textCell"><span>DP<br/>(InH2o)</span></div>
+									<div class="modTableHeadCell numericCell"><span>SP<br/>(PSIA)</span></div>
+									<div class="modTableHeadCell numericCell"><span>TF</span></div>
+									<div class="modTableHeadCell numericCell" ><span>Integral</span></div>
+									<div class="modTableHeadCell numericCell" ><span>Volume</span></div>			
+									<div class="modTableHeadCell numericCell" ><span>Energy</span></div>
+									<div class="modTableHeadCell numericCell" ><span>Alarms</span></div>
+									<div class="modTableHeadCell numericCell" ><span>Flow Time</span></div>
+									<div class="modTableHeadCell numericCell" ><span>Period Time</span></div>					
+								</div>
+								<div class="modTableRow">
+									<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+									<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+									<div class="modTableCell textCell"><span>1.55</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+						
+								</div>
+								<div class="modTableRow">
+									<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+									<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+									<div class="modTableCell textCell"><span>1.55</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+							
+								</div>
+								<div class="modTableRow">
+									<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+									<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+									<div class="modTableCell textCell"><span>1.55</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+								
+								</div>
+								<div class="modTableRow">
+									<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+									<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+									<div class="modTableCell textCell"><span>1.55</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12.55</span></div>
+									<div class="modTableCell numericCell"><span>135.25</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+									<div class="modTableCell numericCell"><span>12</span></div>
+								
+								</div>
+							</div>
+						</div>	
+						
+			</div><!-- end of t2 -->
+			<!-- tab 3 -->
+			<div class="tabsContent" id="tab3">
+
+							<div style='display:inline-block' >
+							
+				
+					
+								<ul class="combo1">
+								<a class="initial" href="#">Points</a>
+								<li class="firstComboItem"><a href="#">20</a></li>
+								<li><a href="#">50</a></li>
+								<li><a href="#">100</a></li>
+								<li><a href="#">200</a></li>
+								<li class="lastComboItem"><a href="#">400</a></li>
+								</ul>
+					
+				
+							
+						</div>
+
+
+							<div  style='display:inline-block'>							
+							 			<ul class="combo1">
+									    <a class="initial" href="#">View</a>
+										<li class="firstComboItem"><a href="#">Grid</a></li>
+										<li class="lastComboItem"><a href="#">Graph</a></li> 							
+										</ul>
+															
+						</div>
+
+						<div>
+								<div id="placeholder" class="placeHolder">
+								</div>
+						</div>
+						
+						
+			</div><!-- end of t3 -->
+			<!-- tab 4 -->
+			<div class="tabsContent" id="tab4">
+				
+<div style='display:inline-block' >
+							
+				
+								<ul class="combo1">
+								<a class="initial" href="#">Day</a>
+								<li class="firstComboItem"><a href="#">3</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">10</a></li>
+								<li><a href="#">15</a></li>
+								<li><a href="#">20</a></li>
+								<li><a href="#">25</a></li>
+								<li><a href="#">30</a></li>
+								<li><a href="#">35</a></li>
+								<li class="lastComboItem"><a href="#">ALL</a></li>
+								</ul>
+					
+						
+				
+							
+						</div>
+	<div class="modernTable">
+		<!-- Table Heading Div-->
+		<div class="modTableHead">
+			<!--Date/Time,Description,Oldval,Newval,SN-->
+			<div class="modTableHeadCell textCell" width="30px"><span>Date/Time</span></div>
+			<div class="modTableHeadCell textCell"><span>Description</span></div>
+			<div class="modTableHeadCell numericCell"><span>Oldval</span></div>
+			<div class="modTableHeadCell numericCell"><span>Newval</span></div>
+			<div class="modTableHeadCell numericCell" ><span>SN</span></div>
+
+		</div>
+		<div class="modTableRow">
+			<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+			<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+			<div class="modTableCell textCell"><span>Hold Last Analog Vals</span></div>
+			<div class="modTableCell numericCell"><span>12.55</span></div>
+			<div class="modTableCell numericCell"><span>135.25</span></div>
+			<div class="modTableCell numericCell"><span>12</span></div>
+
+		</div>
+		<div class="modTableRow">
+			<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+			<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+			<div class="modTableCell textCell"><span>Hold Last Analog Vals</span></div>
+			<div class="modTableCell numericCell"><span>12.55</span></div>
+			<div class="modTableCell numericCell"><span>135.25</span></div>
+			<div class="modTableCell numericCell"><span>12</span></div>
+	
+		</div>
+		<div class="modTableRow">
+			<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+			<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+			<div class="modTableCell textCell"><span>Hold Last Analog Vals</span></div>
+			<div class="modTableCell numericCell"><span>12.55</span></div>
+			<div class="modTableCell numericCell"><span>135.25</span></div>
+			<div class="modTableCell numericCell"><span>12</span></div>
+		
+		</div>
+		<div class="modTableRow">
+			<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+			<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>
+			<div class="modTableCell textCell"><span>Hold Last Analog Vals</span></div>
+			<div class="modTableCell numericCell"><span>12.55</span></div>
+			<div class="modTableCell numericCell"><span>135.25</span></div>
+			<div class="modTableCell numericCell"><span>12</span></div>
+		
+		</div>
+	</div>
+			</div><!-- end of t4 -->
+			<!-- tab 5 -->
+		<!-- tab 5 Analysis start -->
+			<div class="tabsContent scroll-pane3" id="tab5" style="height:558px;">
+				<div class="toogle-btn">
+				<div class="statsHeading2">						
+						<div class="firstEle-right2 ">
+							<a href="#" id="lnkAnaylsis"></a>
+						</div>
+				   </div>
+			
+			</div>
+			<div class="fixed-analysis">
+			
+				<div class="analysisTopHeading">
+					<div class="analysisFirstEle T16">
+						Composition Analysis
+					</div>
+					<div class="analysisPercent T3a">
+						100%
+					</div>
+				</div>
+				<div class="analysisLeftside">
+				<div  ID="compositionContainer" class="conf-header">
+						<div class="heading T16">Composition Elements  </div>
+						<div class="header-edit-all T9">Edit all</div>
+				   </div>
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Hydrogen</div>
+						<div class="analysisValue T7">0%</div>						
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Helium</div>
+						<div class="analysisValue T7">0%</div>						
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Nitrogen</div>
+						<div class="analysisValue T7">0%</div>						
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Oxygen</div>
+						<div class="analysisValue T7">0%</div>						
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Argon</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Water</div>
+						<div class="analysisValue T7">0%</div>						
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Hydrogen Sulfide</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Carbon Dioxide</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Carbon Monoxide</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Methane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Ethane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Propane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">N-Butane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">I-Butane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">N-Pentane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">I-Pentane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">N-Hexane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">N-Heptane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">N-Octane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">N-Notane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">N-Decane</div>
+						<div class="analysisValue T7">0%</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+				</div>	
+				
+				<div class="analysisRightside">
+				
+					<div style='clear:both'></div>
+				
+				<div class="conf-header">
+						<div class="heading T16">others</div>
+						<div class="header-edit-all T9">Edit all</div>
+				   </div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">FPV Method</div>
+						<div class="analysisValue T7">AGA8 Detail</div>						
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Heating Value</div>
+						<div class="analysisValue T7">0</div>						
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Relative Density</div>
+						<div class="analysisValue T7">0</div>						
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Viscosity</div>
+						<div class="analysisValue T7">0</div>
+						<div class="analysisTriangleEdit">
+							<img src="images/table-edit.png" />
+						</div>
+						<div class="analysisPen">
+							<img src="images/edit-pen.png" />
+						</div>
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Pressure Base</div>
+						<div class="analysisValue T7">0</div>						
+					
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Temperature Base</div>
+						<div class="analysisValue T7">0</div>
+						
+					</div>
+					
+					<div class="analysisEditRow">
+						<div class="analysisTitle T8">Z of Air</div>
+						<div class="analysisValue T7">0</div>
+					
+					</div>
+					
+				</div>
+				</div>
+				<div class="live-analysis" style="display:none;">
+				<div class="analysisTopHeading">
+					<div class="label-text">
+						<div class="label T16">use live:</div>
+						<div class="text T7">yes</div>
+					</div>
+					
+					<div class="label-text">
+						<div class="label T16">use on error:</div>
+						<div class="text T7">fixed</div>
+					</div>
+					
+					<div class="label-text">
+						<div class="label T16">live analysis period:</div>
+						<div class="text T7">1.0</div>
+					</div>
+				</div>
+				
+				<div class="modernTable">
+				<!-- Table Heading Div-->
+						<div class="modTableHead">
+							<!--Date/Time,Description,Oldval,Newval,SN-->
+							<!--<div class="modTableHeadCell textCell" width="30px"><span>Date/Time</span></div>-->
+							<div class="modTableHeadCell textCell"><span>Description</span></div>
+							<div class="modTableHeadCell numericCell"><span>live</span></div>
+							<div class="modTableHeadCell numericCell"><span>fixed</span></div>
+							<div class="modTableHeadCell numericCell" ><span>calc</span></div>
+
+						</div>
+						<div class="modTableRow">
+							<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+							<!--<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>-->
+							<div class="modTableCell textCell"><span>heating value</span></div>
+							<div class="modTableCell numericCell"><span>1200</span></div>
+							<div class="modTableCell numericCell"><span>1000</span></div>
+							<div class="modTableCell numericCell"><span>1000</span></div>
+
+						</div>
+						<div class="modTableRow">
+							<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+							<!--<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>-->
+							<div class="modTableCell textCell"><span>specific gravity</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0.6</span></div>
+							<div class="modTableCell numericCell"><span>0.6</span></div>
+					
+						</div>
+						<div class="modTableRow">
+							<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+							<!--<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>-->
+							<div class="modTableCell textCell"><span>n2</span></div>
+							<div class="modTableCell numericCell"><span>200</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>200</span></div>
+						
+						</div>
+						<div class="modTableRow">
+							<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+							<!--<div class="modTableCell textCell"  width="30px"><span>02/04/2011 2:19:51</span></div>-->
+							<div class="modTableCell textCell"><span>co2</span></div>
+							<div class="modTableCell numericCell"><span>22</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+						
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>methane</span></div>
+							<div class="modTableCell numericCell"><span>1</span></div>
+							<div class="modTableCell numericCell"><span>100</span></div>
+							<div class="modTableCell numericCell"><span>100</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>h2s</span></div>
+							<div class="modTableCell numericCell"><span>7</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>h20</span></div>
+							<div class="modTableCell numericCell"><span>2</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>helium</span></div>
+							<div class="modTableCell numericCell"><span>3</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>ethane</span></div>
+							<div class="modTableCell numericCell"><span>1</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>propane</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>n-Butane</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>i-Butane</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>n-Pentane</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>i-Pentane</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>n-Hexane</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>n-Heptane</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>n-Octane</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>n-Nonane</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>n-Decane</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>oxygen</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>carbon monoxide</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>hydrogen</span></div>
+							<div class="modTableCell numericCell"><span>1</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>				
+						</div>
+						
+						<div class="modTableRow">
+							<div class="modTableCell textCell"><span>argon</span></div>
+							<div class="modTableCell numericCell"><span>4</span></div>
+							<div class="modTableCell numericCell"><span>0</span></div>
+							<div class="modTableCell numericCell"><span>4</span></div>				
+						</div>
+					</div>
+			
+			
+			</div>
+			
+			</div><!-- end of t5 Analysis-->
+			<!-- tab 6 -->
+			<div class="tabsContent" id="tab6">
+				<div id="calibrationContent">
+					<div id="calibrationType">
+						<div class="calibrationHeader T16">Select Calibration Type</div>																			
+						<ul id="lstCalibrationType">
+							<li><a href="#">DP-SP Check</a></li>
+							<li><a href="#">Differential Pressure</a></li>
+							<li><a href="#">Static Pressure</a></li>
+							<li><a href="#">Temperature/RTD</a></li>
+						</ul>	
+					</div>
+					<div id="calibrationOptions">
+						<div class="calibrationHeader T16">Calibration Options</div>	
+					
+						<div class="tableRow">
+							<div class="tableRowTitle T8">Do you want to calibrate in guage?</div>
+							<div class="tableRowValue T8-1">
+								<div>Yes</div>
+                                <div class="edit">
+                                    <img src="images/edit-pen.png" class="specialImage" style="margin-top:10px;"/>
+                                </div>								
+							</div>
+							<div style="clear: both">
+							</div>
+						</div>
+                        <div class="tableRow" style="display: none;">
+                            <div class="tableRowTitle T8">Barometric Pressure</div>
+                            <div class="tableRowValue T8-1">
+                                <div>14.73</div>
+                                <div class="edit">
+                                    <img src="images/edit-pen.png" class="specialImage" style="margin-top:10px;"/>
+                                </div>                                
+                            </div>
+                            <div style="clear: both">
+                            </div>
+                        </div>
+                        <div class="tableRow" style=";display: none;">
+                            <div class="tableRowTitle T8">Temperature Bias</div>
+                            <div class="tableRowValue T8-1">
+                                <div>0.3</div>
+                                <div class="edit">
+                                    <img src="images/edit-pen.png" class="specialImage" style="margin-top:10px;"/>                                    
+                                </div>                                
+                            </div>
+                            <div style="clear: both">
+                            </div>
+                        </div>
+						<div class="tableRow">
+							<div class="tableRowTitle T8">Tolerance(% Diff)</div>
+							<div class="tableRowValue T8-1">
+								<div>2%</div>
+                                <div class="edit">
+                                    <img src="images/edit-pen.png" class="specialImage" style="margin-top:10px;"/>
+                                </div>								
+							</div>
+							<div style="clear: both">
+							</div>
+						</div>
+						<div class="tableRow">
+							<div class="tableRowTitle T8">Hold Timer</div>
+							<div class="tableRowValue T8-1">
+								<div>00:60:00</div>
+							</div>
+							<div style="clear: both">
+							</div>
+						</div>
+						<div class="tableRow">
+							<div class="tableRowTitle T8">Calibration Points</div>
+							<div class="tableRowValue T8-1">
+								<div>3 Points</div>
+                                <div class="edit">
+                                    <img src="images/edit-pen.png" class="specialImage" style="margin-top:5px;"/>
+                                </div>								
+							</div>
+							<div style="clear: both">
+							</div>
+						</div>
+					</div>
+					<div id="startCalibration">
+						<input id="btnStartCalibration" type="button" value="Start Calibration" class="calibrationButton T9 launch"/>
+					</div>
+					<div id="newCalibrationRecords">
+						<div class="calibrationHeader  T16">New Calibration Records</div>	
+					
+						<div class="tableRow newCalibRecord" style="background: none">
+							<div class="tableRowTitle T8">SP Calibration</div>
+							<div class="tableRowValue T8-1">
+								<div id="chkSPCalibration" class="checkbox" style="margin-top:10px;"></div>
+							</div>
+							<div style="clear: both">
+							</div>
+						</div>
+						<div class="tableRow newCalibRecord" style="background: none;margin-left:37px;">
+							<div class="tableRowTitle T8">DP Calibration</div>
+							<div class="tableRowValue T8-1">
+								<div id="chkDPCalibration" class="checkbox" style="margin-top:10px;"></div>
+							</div>
+							<div style="clear: both">
+							</div>
+						</div>
+						<div class="tableRow newCalibRecord" style="background: none;">
+							<div class="tableRowTitle T8">Temp. Calibration</div>
+							<div class="tableRowValue T8-1">
+								<div id="chkTempCalibration" class="checkbox" style="margin-top:10px;"></div>
+							</div>
+							<div style="clear: both">
+							</div>
+						</div>
+						<div class="tableRow newCalibRecord" style="background: none;margin-left:37px;">
+							<div class="tableRowTitle T8">DP-SP Check</div>
+							<div class="tableRowValue T8-1">
+								<div id="chkDPSPCheckCalibration" class="checkbox" style="margin-top:10px;"></div>
+							</div>
+							<div style="clear: both">
+							</div>
+						</div>
+					</div>
+					<div id="generateReport">
+						<input id="btnGenerateReport" type="button" value="Generate Report" class="calibrationDisabledButton T9"/>
+					</div>
+					
+					<!-- Calibration Overlay div -->
+					<div id="calibrationOverlay" class="overlayBox">
+						<div id="overlayHeader">
+							<div id="text" class="T3">AGA3: <span id="spCalibrationType" class="T3"></span></div>
+							<div id="holdTimeout" class="T3">Hold Timer 00:60:00</div>											
+						</div>
+						<div>
+							<ul id="dpspCalibTypeNav" class="overlayNavigation T5" style="display: none;">
+								<li style="width:165px !important;"><a href="#dpspCheck" style="width:115px !important;">DP-SP Check</a></li>
+								<li style="width:295px !important;"><a href="#dpspFinish">Finish</a></li>
+							</ul>
+							<ul id="otherCalibTypeNav" class="overlayNavigation T5" style="display:none;">
+								<li><a href="#check">Check</a></li>
+								<li class="crumb"><a href="#calibrate" style="padding-left:32px;">Calibrate</a></li>
+								<li class="crumb"><a href="#verify">Verify</a></li>
+								<li class="crumb" style="width: 185px;"><a href="#finish">Finish</a></li>
+							</ul>											
+						</div>
+						<!-- DP-SP CHECK -->
+						<div id="dpspCheckContent">
+							<div class="dpspTabs">
+								<ul class="tabs">
+									<li><a href="#dpspCheck">CHECK</a></li>
+									<li><a href="#dpspRezero">RE-ZERO</a></li>
+								</ul>
+								<div id="dpspCheck">
+									<div class="details">
+										<div class="statusText" class="T11">
+											<span id="dpspHeaderText" class="T14a">AS FOUND CHECKS:</span> <span class="T12">LOG THE LIVE DP-SP VALUES</span>
+										</div>
+										<div class="calibrationInputs">
+											<div class="test">
+												<div class="T11">DP</div>
+												<div>
+													<div id="DPValue" class="T1b"></div>												
+												</div>
+											</div>
+											<div class="liveFound">
+												<div class="T11">SP</div>
+												<div>
+													<div id="SPValue" class="T1b"></div>
+												</div>
+											</div>										
+											<div class="userInputStatus">													
+											</div>
+										</div>
+										<div class="dpspRows">
+											
+										</div>
+									</div>											
+								</div>
+								<div id="dpspRezero">
+									<div>
+										<div class="calibListHeading" style="margin-left:0; margin-top:10px;">
+											SELECT 1 POINT TO REZERO.
+										</div>
+										<div class="calibrationInputs">
+											<div class="test">
+												<div class="T11">TEST</div>
+												<div>
+													<input id="txtRezeroTest" type="text" class="T1b" maxlength="3"/>
+												</div>
+											</div>
+											<div class="liveFound">
+												<div class="T11">LIVE/FOUND</div>
+												<div class="data T1b">169.1</div>
+											</div>															
+										</div>
+                                        <div style="color:Gray; width:100%;">
+                                            Sample hard-coded live/found value. No functionality provided yet for Re-zero.
+                                        </div>														
+									</div>	
+								</div>
+							</div>
+						</div>
+						<!-- CHECK -->
+						<div id="calibrationCheckContent">											
+							<div class="details">
+								<div class="statusText" class="T11">
+									<span class="T14a">AS FOUND CHECKS:</span> <span class="T12">TEST FOR LOW, MEDIUM &amp; HIGH RANGE REFERENCE VALUES.</span>
+								</div>
+								<div class="calibrationInputs">
+									<div class="test">
+										<div class="T11">TEST</div>
+										<div>
+											<input id="txtCalibrationTest" type="text" class="T1b" maxlength="3"/>
+										</div>
+									</div>
+									<div class="liveFound">
+										<div class="T11">LIVE/FOUND</div>
+										<div class="data T1b liveHeaderValue">146.2</div>
+									</div>
+									<div class="percentageDiff">
+										<div class="T11">% DIFFERENCE</div>
+										<div class="data T1b calibrationDiff">-</div>
+									</div>
+									<div class="userInputStatus">													
+									</div>
+								</div>
+								<div class="calibrationRows">
+									
+								</div>
+							</div>											
+						</div>
+						<!-- END CHECK -->
+						<!-- CALIBRATE -->
+						<div id="calibrationCalibrateContent">
+							<div class="calibrationCalibrateTabs">
+								<ul class="tabs">
+									<li><a href="#calibTab3Point">3-POINT</a></li>
+									<li><a href="#calibTabRezero1">RE-ZERO</a></li>
+								</ul>
+								<div class="tabsContent calibrate" id="calibTab3Point">
+									<div id="calibration3PointCanvas">
+									</div>
+									<div class="threePointsCalibList">
+										<div class="calibListHeading" class="T12">
+											SELECT 3 POINTS FOR CALIBRATION
+										</div>
+										<div class="threePointCalibRows">														
+											<div class="threePointRow">
+												<div class="checkbox checkbox-active"></div>
+												<div class="T12">54.00</div>
+												<div class="T12">55.28</div>
+												<div class="T12">1.99%</div>
+											</div>
+											<div class="threePointRow">
+												<div class="checkbox"></div>
+												<div class="T12">85.00</div>
+												<div class="T12">87.97</div>
+												<div class="T7b">3.49%</div>
+											</div>
+											<div class="threePointRow">
+												<div class="checkbox checkbox-active"></div>
+												<div class="T12">125.50</div>
+												<div class="T12">131.00</div>
+												<div class="T7b">4.80%</div>
+											</div>
+											<div class="threePointRow">
+												<div class="checkbox"></div>
+												<div class="T12">160.30</div>
+												<div class="T12">168.96</div>
+												<div class="T7b">5.60%</div>
+											</div>
+											<div class="threePointRow">
+												<div class="checkbox checkbox-active"></div>
+												<div class="T12">198.00</div>
+												<div class="T12">215.00</div>
+												<div class="T7b">8.89%</div>
+											</div>
+                                            <div style="text-align:center; color:Gray; width:100%; border-bottom:0" class="threePointRow">
+                                                Sample hard-coded values. Only 3 check-box needs to be selected.
+
+                                            </div>
+										</div>
+									</div>
+								</div>
+								<div class="tabsContent calibrate" id="calibTabRezero1">
+									<div>
+										<div class="calibListHeading" style="margin-left:0;">
+											SELECT 1 POINT TO REZERO.
+										</div>
+										<div class="calibrationInputs">
+											<div class="test">
+												<div class="T11">TEST</div>
+												<div>
+													<input id="txtRezeroTest1" type="text" class="T1b" maxlength="3"/>
+												</div>
+											</div>
+											<div class="liveFound">
+												<div class="T11">LIVE/FOUND</div>
+												<div class="data T1b">169.1</div>
+											</div>															
+										</div>
+                                        <div style="color:Gray; width:100%;">
+                                            Sample hard-coded live/found value. No functionality provided yet for Re-zero.
+                                        </div>														
+									</div>	
+								</div>
+							</div>
+						</div>
+						<!-- END CALIBRATE -->
+						<!-- VERIFY -->
+						<div id="calibrationVerify">
+							<div class="details">
+								<div class="statusText" class="T11">
+									<span class="T14a">AS LEFT CHECKS:</span> <span class="T12">TEST FOR LOW, MEDIUM &amp; HIGH RANGE REFERENCE VALUES.</span>
+								</div>
+								<div class="calibrationInputs">
+									<div class="test">
+										<div class="T11">TEST</div>
+										<div>
+											<input id="txtCalibrationVerify" type="text" class="T1b" maxlength="3"/>
+										</div>
+									</div>
+									<div class="liveFound">
+										<div class="T11">LIVE/FOUND</div>
+										<div class="data T1b liveHeaderValue">146.2</div>
+									</div>
+									<div class="percentageDiff">
+										<div class="T11">% DIFFERENCE</div>
+										<div class="data T1b calibrationDiff">-</div>
+									</div>
+									<div class="userInputStatus">													
+									</div>
+								</div>
+								<div class="calibrationRows">
+									
+								</div>
+							</div>											
+						</div>
+						<!-- END VERIFY -->
+						<!-- FINSIH -->
+						<div id="calibrationFinish">
+							<div id="finishDP">
+								<div class="finishContent">
+									<div class="asFound">
+										<div class="finishHeading T12">AS FOUND</div>
+										<div class="finishRows">		
+										</div>
+									</div>
+									<div class="asLeft">
+										<div class="finishHeading T12">AS LEFT</div>
+										<div class="finishRows">
+										</div>
+									</div>
+								</div>
+							</div>											
+						</div>
+						<!-- END FINISH -->
+						<div id="calibrationFooter">
+							<input id="btnAbort" type="button" value="Abort" class="T9" style="margin-left:10px"/>
+							<input id="btnRezeroAndVerify" type="button" value="Re-zero and Verify" class="calibrationButton T9" style="display:none"/>
+							<div style="float: right">
+								<input id="btnAcceptAndFinish" type="button" value="Accept & Finish" class="calibrationDisabledButton T9" style="margin-right:10px;"/>
+								<input id="btnContinue" type="button" value="Continue to Calibrate" class="calibrationDisabledButton T9" style="margin-right:10px;"/>
+								<input id="btnRecalibrate" type="button" value="Re-calibrate" class="calibrationButton T9" style="display: none; margin-right:10px"/>
+								<input id="btnAcceptAndContinue" type="button" value="Accept & Finish" class="calibrationDisabledButton T9" style="display: none; margin-right:10px"/>
+								<input id="btnAddToReportAndFinish" type="button" value="Add to Report & Finish" class="calibrationButton T9" style="display: none;margin-right:10px"/>
+								<input id="btnRezero" type="button" value="Re-zero and Verify" class="calibrationButton T9" style="display: none;margin-right:10px"/>
+							</div>
+						</div>
+					</div>	
+                    <!-- End Calibration Overlay div -->                                    					
+                </div>
+			</div><!-- end of t6 -->
+			<!-- tab 7 -->
+			<div class="tabsContent scroll-pane2" id="tab7">
+				<div class="tab7-wrap">
+				<div class="conf-left ">
+				   <div class="blocks-top">
+					<div class="conf-header">
+						<div class="heading T16">Constants</div>
+						<div  id="showOverlay" class="header-edit-all T9"><a href="#editAll"  class="launchLink T9" >Edit all</a></div>
+				   </div>
+					<div class="row" id="constant-od-div">
+						<div class="fieldname T8">Orifice Diameter</div>
+						<div class="fieldvalue T7" id="constant-od-value">1.0</div>
+						<div class="edit-pen"><a href="#Orifice"  class="launchLink" ><img class="pen" src="images/edit-pen.png"/></a></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>					
+					
+					<div class="row" id="constant-uft-div">
+						<div class="fieldname T8">use fixed temperature</div>
+						<div class="fieldvalue T7" id="constant-uft-value">yes</div>
+						<div class="edit-pen1"><a href="#fixed-temp"  class="launchLink" ><img class="pen" src="images/edit-pen.png"/></a></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">pressure base</div>
+						<div class="fieldvalue T7">1226.26</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">Orifice Material</div>
+						<div class="fieldvalue T7">monel</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">fixed temperature</div>
+						<div class="fieldvalue T7">102.35</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">tap type</div>
+						<div class="fieldvalue T7">flange</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">rtd installed</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">tap location</div>
+						<div class="fieldvalue T7">upStream</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">auxillary factor</div>
+						<div class="fieldvalue T7">1.0</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">Z of air ratio</div>
+						<div class="fieldvalue T7">1.0</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">base orifice factor</div>
+						<div class="fieldvalue T7">1.0</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">orifice coef exp</div>
+						<div class="fieldvalue T7">7.95</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">fixed cd</div>
+						<div class="fieldvalue T7">1.0</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">pipe coef exp</div>
+						<div class="fieldvalue T7">7.95</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use fixed sp on error</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">barometric pressure</div>
+						<div class="fieldvalue T7">11.23</div>
+						<div class="edit-pen"><img class="pen" class="pen"src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">fixed sp</div>
+						<div class="fieldvalue T7">1.01</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">absolute fixed viscosity </div>
+						<div class="fieldvalue T7">1.0</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>				
+				  </div>
+				  
+				  <div class="blocks">
+					<div class="conf-header">
+						<div class="heading T16">factors</div>
+						<div class="header-edit-all T9">Edit all</div>
+				   </div>
+					<div class="row">
+						<div class="fieldname T8">use fbp</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use fr</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">ftb</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use fa</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use fg</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use fpv</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use fb</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use fw</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">fb calculation</div>
+						<div class="fieldvalue T7">manual</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use faux</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use ftf</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use calc cd</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use y</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+									
+				  </div>
+				</div>
+				<div class="conf-right">
+					<div class="blocks-top">
+					<div class="conf-header">
+						<div class="heading T16">setup</div>
+						<div class="header-edit-all T9">Edit all</div>
+				   </div>
+					<div class="row">
+						<div class="fieldname T8">tube id</div>
+						<div class="fieldvalue T7">total flow</div>
+						<!--<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>-->
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">log period</div>
+						<div class="fieldvalue T7">60 min</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">tube description</div>
+						<div class="fieldvalue T7">aga3</div>
+						<!--<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>-->
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">vol calc period </div>
+						<div class="fieldvalue T7">60 min</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">contact hour</div>
+						<div class="fieldvalue T7">aga3-1985</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">dp zero cutoff</div>
+						<div class="fieldvalue T7">2.0</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">fpv method</div>
+						<div class="fieldvalue T7">NX19 GCN</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">sp/dp sqr avg</div>
+						<div class="fieldvalue T7">linear</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">temp base</div>
+						<div class="fieldvalue T7">60</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">pipe diameter</div>
+						<div class="fieldvalue T7">1.0</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use ftf</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use calc cd</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">use y</div>
+						<div class="fieldvalue T7">yes</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+									
+				  </div>
+				  
+				  <div class="blocks">
+					<div class="conf-header">
+						<div class="heading T16">current values</div>
+						<div class="header-edit-all T9">Edit all</div>
+				   </div>
+					<div class="row">
+						<div class="fieldname T8">yesterday's volume</div>
+						<div class="fieldvalue T7">566.23</div>
+						<!--<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>-->
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">Accumulated volume</div>
+						<div class="fieldvalue T7">60 min</div>
+						<!--<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>-->
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">tube description</div>
+						<div class="fieldvalue T7">126.35</div>
+						<!--<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>-->
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">todays volume </div>
+						<div class="fieldvalue T7">566.23</div>
+						<!--<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>-->
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">yesterday's energy</div>
+						<div class="fieldvalue T7">127.67</div>
+						<!--<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>-->
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>		
+									
+				  </div>
+				  
+				  <div class="blocks">
+					<div class="conf-header">
+						<div class="heading T16">limits</div>
+						<div class="header-edit-all T9">Edit all</div>
+				   </div>
+					<div class="row">
+						<div class="fieldname T8">sp high limit</div>
+						<div class="fieldvalue T7">123.23</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">tf high limit</div>
+						<div class="fieldvalue T7">102.02</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">sp low limit</div>
+						<div class="fieldvalue T7">123.23</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">tf low limit </div>
+						<div class="fieldvalue T7">102.02</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">dp high limit</div>
+						<div class="fieldvalue T7">145.45</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>	
+						
+					<div class="row">
+						<div class="fieldname T8">flow rate high limit</div>
+						<div class="fieldvalue T7">123.23</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>	
+					
+					<div class="row">
+						<div class="fieldname T8">dp low limit</div>
+						<div class="fieldvalue T7">145.45</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>	
+					
+					<div class="row">
+						<div class="fieldname T8">flow rate low limit</div>
+						<div class="fieldvalue T7">123.23</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>	
+						
+									
+				  </div>
+				  
+				</div>
+			</div>
+			</div><!-- end of t7 -->
+			
+			<!--ORIFICE CHANGE TAB START-->
+			<div class="tabsContent" id="tab8">
+				<div class="tab8-wrap">
+				<div class="conf-header">
+						<div class="heading T16">orifice change-Hold Timer 00:60:00</div>
+						<div class="showOverlay header-edit-all T9"><a href="#editAll-orifice"  class="launchLink T9" >Edit all</a></div>
+				   </div>
+				<div class="conf-left ">
+				   <div class="blocks-top">
+					
+					<div class="row">
+						<div class="fieldname T8">Orifice Diameter</div>
+						<div class="fieldvalue T7">1.0 in</div>
+						<div class="edit-pen"><a href="#od-orifice"  class="launchLink" ><img class="pen" src="images/edit-pen.png"/></a></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>					
+					
+					<div class="row">
+						<div class="fieldname T8">sp tap location</div>
+						<div class="fieldvalue T7">upstream</div>
+						<div class="edit-pen"><a href="#sptap-orifice"  class="launchLink" ><img class="pen" src="images/edit-pen.png"/></a></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">temperature</div>
+						<div class="fieldvalue T7">68 &deg;F</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">Plate exp. coefficient</div>
+						<div class="fieldvalue T7">stainless(9.25)</div>
+						<!--<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>-->
+					</div>					
+									
+				  </div>		  
+				  
+				</div>
+				<div class="conf-right">
+					<div  >
+					<!--<div class="conf-header">
+						
+						<div class="header-edit-all T9">Edit all</div>
+				   </div>-->
+					<div class="row">
+						<div class="fieldname T8">pipe diameter</div>
+						<div class="fieldvalue T7">2.067 in</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">tap type</div>
+						<div class="fieldvalue T7">flange</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">pipe ref. temp.</div>
+						<div class="fieldvalue T7">68 &deg;F</div>
+						<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>
+					</div>
+					
+					<div class="row">
+						<div class="fieldname T8">pipe exp. coefficient </div>
+						<div class="fieldvalue T7">stainless(9.25)</div>
+						<!--<div class="edit-pen"><img class="pen" src="images/edit-pen.png"/></div>
+						<div class="editable"><img src="images/table-edit.png"></div>-->
+					</div>			
+									
+				  </div> 
+				  
+				</div>
+				<div class="monitoring-btn">
+					<div class="btns closeLink "><a href="#" class="T9">hold</a></div>
+					<div class="btns closeLink "><a href="#" class="T9">flowing</a></div>
+					<div class="btns closeLink "><a href="#" class="T9">change orifice plate</a></div>
+				
+				</div>
+			</div>
+			
+			</div><!-----ORIFICE CHANGE TAB END-->
+		</div><!-- tabbed ends here-->
+			
+		    </div>	
+		</div>	
+		</div>
+	</div>
+	<!-----OVERLAY DIV--->
+		<div class="bgCover">&nbsp;</div>
+					<div class="overlayBox" id="pen" style='display:none'>
+						<div class="overlayContent">
+							<div class="overlay-header T3">wait options</div>
+							
+							<!--OPTIONAL NAV BAR FOR SOME OVERLAYS 
+							<div class="nav-bar">navigation</div>
+							END OF OPTIONAL NAV BAR FOR SOME OVERLAYS-->
+							
+							<div class="sub-header T5">Tubing line:1.88</div>
+							<hr></hr>
+							<div class="container scroll-pane-overlay1">
+							<div class="overlay-top">
+								<div class="overlay-left">
+									<div class="row1">
+										<div class="left-text T7">open on tubing line</div>
+										<div class="rt-checkbox">
+											<img src="images/checkbox-white-normal.png" class="checkbox" alt="checkbox"/>
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">setpoint</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="" class="textbox" >
+											</div>
+											<div class="increment-image"></div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="overlay-right">
+									<div class="row1">
+										<div class="left-text T7">enable tuning</div>
+										<div class="rt-checkbox">
+											<img src="images/checkbox-white-normal.png" class="checkbox" alt="checkbox"/>
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">increment(+/-)</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="" class="textbox" >
+											</div>
+											<div class="increment-image"></div>
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">min value</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="" class="textbox" >
+											</div>
+											<div class="increment-image"></div>
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">max value</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="" class="textbox" >
+											</div>
+											<div class="increment-image"></div>
+										</div>
+									</div>
+								</div>								
+							</div>
+							
+							
+							
+							</div>
+							<div class="overlay-footer">
+								
+								<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a>	
+								</div>
+								
+								<div class="save-btn closeLink"><a href="#" class=" T9">Save</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+	<!----END FOR OVERLAY DIV-->
+	
+	<!----EDIT ALL OVERLAY--->	
+					<div class="overlayBox" id="editAll" style='display:none'>
+						<div class="overlayContent">
+							<div class="overlay-header T3">Constants</div>
+							<!--<div class="sub-header T5">Edit all</div>
+							<hr></hr>-->
+							<div class="container scroll-pane-overlay1">
+							<div class="overlay-top">
+								<div class="overlay-left">
+																	
+									<div class="row1">
+										<div class="left-text T7">Orifice Diameter</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="1.0" class="textbox" >
+											</div>
+											<!--<div class="increment-image">
+												<img src="images/increment-top-default.png" class="increment-up">
+												<img src="images/increment-down-default.png" class="increment-down">
+											</div>-->
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">pressure Base</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="1226.26" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">fixed temperature</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="102.35" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">rtd installed</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="yes" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">auxillary factor</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="1.0" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">base orifice factor</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="1.0" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">fixed cd</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="1.0" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">use fixed sp on error</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="yes" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">fixed sp</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="1.01" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+								</div>
+								<div class="overlay-right">
+									<div class="row1">
+										<div class="left-text T7">Use Fixed Temperature</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="yes" class="textbox" >
+											</div>
+											<!--<div class="increment-image">
+												<img src="images/increment-top-default.png" class="increment-up">
+												<img src="images/increment-down-default.png" class="increment-down">
+											</div>-->
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">Orifice material</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="monel" class="textbox" >
+											</div>										
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">tap type</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="flange" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">tap location</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="upStream" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">Z of air ratio</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="1226.26" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">orifice coef exp</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="7.95" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">pipe coef exp</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="7.95" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">barometric pressure</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="11.23" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">absolute fixed viscosity </div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="1.0" class="textbox" >
+											</div>											
+										</div>
+									</div>								
+									
+								</div>								
+							</div>
+							
+							
+							<!--<div class="overlay-bot">
+							<div class="sub-header T5">Tubing line:1.88</div>
+								<div class="overlay-left">
+									<div class="row1">
+										<div class="left-text T7">open on casing line</div>
+										<div class="rt-checkbox">
+											<img src="images/checkbox-white-normal.png" class="checkbox" alt="checkbox"/>
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">setpoint</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="" class="textbox" >
+											</div>
+											<div class="increment-image">
+												<img src="images/increment-top-default.png" class="increment-up">
+												<img src="images/increment-down-default.png" class="increment-down">
+											</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="overlay-right">
+									<div class="row1">
+										<div class="left-text T7">enable tuning</div>
+										<div class="rt-checkbox">
+											<img src="images/checkbox-white-normal.png" class="checkbox" alt="checkbox"/>
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">increment(+/-)</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="" class="textbox" >
+											</div>
+											<div class="increment-image">
+												<img src="images/increment-top-default.png" class="increment-up">
+												<img src="images/increment-down-default.png" class="increment-down">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">min value</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="" class="textbox" >
+											</div>
+											<div class="increment-image">
+												<img src="images/increment-top-default.png" class="increment-up">
+												<img src="images/increment-down-default.png" class="increment-down">
+											</div>
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">max value</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="" class="textbox" >
+											</div>
+											<div class="increment-image">
+												<img src="images/increment-top-default.png" class="increment-up">
+												<img src="images/increment-down-default.png" class="increment-down">
+											</div>
+										</div>
+									</div>
+								</div>								
+							</div>-->
+							</div>
+							<div class="overlay-footer">
+								
+								<div class="cancel-btn closeLink"><a href="#editall"  class=" T9">Cancel</a>	
+								</div>
+								
+								<div class="save-btn closeLink"><a href="#" class=" T9">Save</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+	
+	
+	<!----END FOR EDIT ALL OVERLAY-->
+	
+	<!----Orifice overlay--->
+<div class="overlayBoxSmall" id="Orifice" style='display:none'>
+	<div class="overlay-headerSmall T3">Constants</div>
+	
+	<div class="containerSmall">
+		<div class="overlay-topSmall">
+			<div class="overlay-midSmall">
+				<div class="row1Small">
+					<div class="left-text T7">Orifice Diameter</div>
+					<div class="incrementbox">
+						<div class="input-box">
+							<input id="constant-od-value-overlay" type="textbox"  value="1.0" class="textbox" >
+						</div>
+						<div class="increment-image"></div>
+					</div>
+				</div>
+			</div>
+						
+		</div>
+	</div>	
+	<div class="overlay-footerSmall">
+			<!--<a href="#" class="closeLink">Close</a>-->
+				<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a></div>	
+				<div class="save-btn closeLink"><a href="#" class=" T9">Save</a></div>
+			</div>	
+</div>
+	<!---end for Orifice overlay-->
+	
+<!--use fixed temp-->
+<div class="overlayBoxSmall" id="fixed-temp" style='display:none'>
+	<div class="overlay-headerSmall T3">Constants</div>
+	<hr></hr>
+	<div class="containerSmall">
+		<div class="overlay-topSmall">
+			<div class="overlay-midSmall">
+				<div class="row1Small">
+					<div class="left-text T7">use fixed temperature</div>
+					<div class="incrementbox">
+						<div class="input-box">
+							<input id="constant-uft-value-overlay" type="textbox"  value="yes" class="textbox" >
+						</div>
+						
+					</div>
+				</div>
+			</div>
+						
+		</div>		
+	</div>
+			<div class="overlay-footerSmall">
+			<!--<a href="#" class="closeLink">Close</a>-->
+				<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a></div>	
+				<div class="save-btn closeLink"><a href="#" class=" T9">Save</a></div>
+			</div>		
+</div>
+
+
+<!--end for use fixed temp-->
+
+<!---EDIT ALL OVERLAY FOR ORIFICE CHANGE START-->
+<div class="overlayBox" id="editAll-orifice">
+						<div class="overlayContent">
+							<div class="overlay-header T3">orifice change</div>
+							<!--<div class="sub-header T5">Edit all</div>
+							<hr></hr>-->
+							<div class="container scroll-pane-overlay1">
+							<div class="overlay-top">
+								<div class="overlay-left">
+																	
+									<div class="row1">
+										<div class="left-text T7">Orifice Diameter</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="1.0" class="textbox" >
+											</div>
+											<!--<div class="increment-image">
+												<img src="images/increment-top-default.png" class="increment-up">
+												<img src="images/increment-down-default.png" class="increment-down">
+											</div>-->
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">sp tap location</div>
+										<div class="incrementbox">
+											<div class="input-box">												
+												<div  style='display:inline-block'>							
+													<ul id="comboLoc">
+											
+													<li class="firstComboItem"><a href="#">Upstream</a></li>
+													<li class="lastComboItem"><a href="#">Downstream</a></li> 							
+													</ul>															
+												</div>
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">temperature</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="68" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+													
+									
+									
+								</div>
+								<div class="overlay-right">
+									<div class="row1">
+										<div class="left-text T7">pipe diameter</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="2.067" class="textbox" >
+											</div>
+											<!--<div class="increment-image">
+												<img src="images/increment-top-default.png" class="increment-up">
+												<img src="images/increment-down-default.png" class="increment-down">
+											</div>-->
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">tap type</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<div  style='display:inline-block'>							
+													<ul id="comboTap">
+													
+													<li class="firstComboItem"><a href="#">Flange</a></li>
+													<li class="lastComboItem"><a href="#">Monel</a></li>
+																				
+													</ul>															
+												</div>
+											</div>										
+										</div>
+									</div>								
+																	
+									<div class="row1">
+										<div class="left-text T7">pipe ref. Temp.</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="68" class="textbox" >
+											</div>											
+										</div>
+									</div>
+
+								</div>								
+							</div>
+													
+							</div>
+							<div class="overlay-footer">
+								
+								<div class="cancel-btn closeLink"><a href="#"  class=" T9">Cancel</a>	
+								</div>
+								
+								<div class="save-btn closeLink"><a href="#" class=" T9">Save</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+<!---EDIT ALL OVERLAY FOR ORIFICE CHANGE END--> 	
+
+<!--ORIFICE DIAMETER OVERLAY FOR ORIFICE CHANGE START---->
+<div class="overlayBoxsmall" id="od-orifice">
+	<div class="overlay-headerSmall T3">orifice change</div>
+	
+	<div class="containerSmall">
+		<div class="overlay-topSmall">
+			<div class="overlay-midSmall">
+				<div class="row1Small">
+					<div class="left-text T7">Orifice Diameter</div>
+					<div class="incrementbox">
+						<div class="input-box">
+							<input type="textbox"  value="1.0" class="textbox" >
+						</div>
+						<div class="increment-image"></div>
+					</div>
+				</div>
+			</div>
+						
+		</div>
+	</div>	
+	<div class="overlay-footerSmall">
+			<!--<a href="#" class="closeLink">Close</a>-->
+				<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a></div>	
+				<div class="save-btn closeLink"><a href="#" class=" T9">Save</a></div>
+			</div>	
+</div>
+<!----ORIFICE DIAMETER OVERLAY FOR ORIFICE CHANGE END---->	
+
+<!--SP TAP LOCATION OVERLAY FOR ORIFICE CHANGE--->
+<div class="overlayBoxsmall" id="sptap-orifice">
+	<div class="overlay-headerSmall T3">orifice change</div>
+	
+	<div class="containerSmall">
+		<div class="overlay-topSmall">
+			<div class="overlay-midSmall">
+				<div class="row1Small">
+					<div class="left-text T7">Sp tap location</div>
+					<div class="incrementbox">
+						<div class="input-box">
+							<input type="textbox"  value="upstream" class="textbox" >
+						</div>
+						<div class="increment-image"></div>
+					</div>
+				</div>
+			</div>
+						
+		</div>
+	</div>	
+	<div class="overlay-footerSmall">
+			<!--<a href="#" class="closeLink">Close</a>-->
+				<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a></div>	
+				<div class="save-btn closeLink"><a href="#" class=" T9">Save</a></div>
+			</div>	
+</div>	<!--SP TAP LOCATION OVERLAY FOR ORIFICE CHANGE END-->		
+	<!----EDIT ALL OVERLAY--->	
+					<div class="overlayBox" id="compositionOverlay" style='display:none'>
+						
+						<div class="overlayContent">
+							<div class="overlay-header T3">Composition Elements</div>
+							<div class="sub-header T5"><div style="width:30%;float:left;">Composition Analysis</div>	<div class="comp-heading T3a">
+						100%
+					</div></div>
+							<hr></hr>
+							<div class="container scroll-pane-overlay1">
+							<div class="overlay-top">
+								<div class="overlay-left">
+																	
+									<div class="row1">
+										<div class="left-text T7">Hydrogen</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="10" class="textbox" >
+											</div>
+											<!--<div class="increment-image">
+												<img src="images/increment-top-default.png" class="increment-up">
+												<img src="images/increment-down-default.png" class="increment-down">
+											</div>-->
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">Helium</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="13" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">Oxygen</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="4" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">Argon</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="9" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">Water</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="4" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">Hydrogen Sulfide</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="4" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">Carbon Dioxide</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="8" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">Carbon Monoxide</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="9" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">Methane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="23" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+										<div class="row1">
+										<div class="left-text T7">Ethane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="25" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+										
+									
+								</div>
+								<div class="overlay-right">
+								
+								<div class="row1">
+										<div class="left-text T7">Propane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="1" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+										<div class="row1">
+										<div class="left-text T7">N-Butane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="2" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">I-Butane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="9" class="textbox" >
+											</div>
+											<!--<div class="increment-image">
+												<img src="images/increment-top-default.png" class="increment-up">
+												<img src="images/increment-down-default.png" class="increment-down">
+											</div>-->
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">N-Pentane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+													<input type="textbox"  value="9" class="textbox" >
+											</div>										
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">I-Pentane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="9" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">N-Hexane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="21" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">N-Heptane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="14" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">N-Octane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="5" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">N-Notane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="8" class="textbox" >
+											</div>											
+										</div>
+									</div>
+									
+									<div class="row1">
+										<div class="left-text T7">N-Decane</div>
+										<div class="incrementbox">
+											<div class="input-box">
+												<input type="textbox"  value="6" class="textbox" >
+											</div>											
+										</div>
+									</div>
+														
+									
+								</div>								
+							</div>
+							
+							
+							
+							</div>
+							<div class="overlay-footer">
+								
+								<div class="cancel-btn closeLink"><a href="#editall"  class=" T9">Cancel</a>	
+								</div>
+								
+								<div class="save-btn closeLink"><a href="#" class=" T9">Save</a>	
+								</div>
+							</div>
+						</div>
+					</div>
+	
+	
+	<!----END FOR EDIT ALL OVERLAY-->
+</div>
+</body>
+</html>
+
+
+

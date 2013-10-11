@@ -1,0 +1,378 @@
+/*************STYLES FOR CALIBRATION REPORTS*************************/
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#divCalibrationReports {
+	height: 100%;
+	width: 800px;	
+	margin-left: auto;
+	margin-right: auto;
+	font-family: Arial;
+	font-size: 12px;
+}
+
+#divCR-heading {
+	font-size: 22px;
+	text-align: left;
+	border-bottom: 1px solid #777;
+}
+
+#divCR-topSection {
+	float: left;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.left, .mid {
+	float: left;	
+}
+
+.left {
+	text-align: center !important;
+}
+
+.mid {
+	margin-left: 25px;
+}
+
+.right {
+	float: right;	
+}
+
+.divCR-data-entry {
+	margin-bottom: 3px;
+}
+
+.divCR-data-entry div {
+	display: inline-block;	
+}
+
+.divCR-data-entry > div:first-child {
+	width: 125px;
+	text-align: left;
+}
+
+.div-checkboxes {
+	width: 125px;
+	text-align: left;	
+}
+
+.checkbox, .label-checkbox {
+	border: 1px solid #CCC;
+	width: 17px;
+	height: 17px;
+	vertical-align: bottom;
+}
+
+.checkbox {
+	margin-right: 10px;
+}
+
+
+input[type='text'] {
+	width: 120px;
+	margin-left: 3px;
+	border: 1px solid #ccc;
+
+}
+
+#checkbox-header-text {
+	margin-top: 10px;	
+	float: left;
+	width: 100%;
+	clear: both;
+}
+
+#checkbox-header-text div {
+	float: left;
+}
+
+#checkbox-header-text .chk-header-1 {
+	margin-left: 129px;
+}
+
+#checkbox-header-text .chk-header-1 div, #checkbox-header-text .chk-header-2 div, #checkbox-header-text .chk-header-3 div  {
+	margin-right: 13px;
+}
+
+#checkbox-header-text .chk-header-2 {
+	margin-left: 215px;
+}
+
+#checkbox-header-text .chk-header-3 {
+	margin-left: 207px;
+}
+
+
+#divCR-section1, #divCR-section2, #divCR-section3, #divCR-signatureOrCompany {
+	margin: 0;
+	clear: both;
+	width: 100%;
+	margin-top: 30px;
+	padding: 0;	
+	float: left;
+}
+
+#divCR-section1Heading, #divCR-section2Heading, #divCR-section3Heading, .divCR-remarks, #div-sign-Header {	
+	font-size: 14px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	border: 1px solid #777;
+	background-color: #CCC;
+	padding-left: 5px;
+	height: 25px;
+	line-height: 25px;
+}
+
+#divGrids {
+	float: left;	
+	width: 100%;
+}
+
+
+#div-dp-grid, #div-sp-grid, #div-temp-grid, #div-dpsp-grid, #div-calrange-grid {		
+	border: 1px solid black;
+	float: left;
+	width: 32.5%;
+	margin-right: 7px;
+	margin-bottom: 15px;
+}
+
+#div-temp-grid {
+	margin-right: 0;
+}
+
+
+
+.divCR-heading-level1, .divCR-heading-level2, .divCR-heading-level3  {
+	border-bottom: 1px solid #777;
+	font-weight: bold;
+	float: left;
+	width: 100%;
+	clear: both;
+	height: 20px;
+	line-height: 20px
+}
+
+.divCR-heading-level1, .divCR-heading-level2 {
+	text-align: center;
+	margin: 0;
+	padding: 0;	
+
+}
+
+.divCR-heading-level2 div {
+	font-weight: bold;	
+	display: inline-block;
+	width: 50%;
+}
+
+.divCR-heading3-level2 {
+	float: left;
+	font-weight: bold;	
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border-bottom: 1px solid #777;
+	height: 20px;
+	line-height: 20px;
+}
+
+.divCR-heading3-level2 div {		
+	
+	display: inline-block;
+	width: 33%;	
+	text-align: center;
+	float: left;
+	border-right: 1px solid #777;	
+}
+
+
+.foundCol {
+	border-right: 1px solid #777;	
+	width: 48% !important;
+	margin: 0;	
+}
+
+.foundCol {
+	float: left;
+}
+
+.divCR-heading-level3 {
+	clear: both;
+}
+
+.divCR-heading-level3 div {
+	float: left;
+	width: 23.8%;
+	border-right: 1px solid #777;
+	font-weight: bold;
+	text-align: center;
+}
+
+.divCR-heading-level3 div:last-child {
+	width: 27%;
+	border: none;
+	border-bottom: 1px solid #777;
+}
+
+.meter {
+	width: 27% !important;
+	border: none !important;	
+}
+
+.div-CR-row {
+	border-bottom: 1px solid #CCC;
+	float: left;
+	width: 100%;
+	height: 20px;
+	line-height: 20px;
+}
+
+.div-CR-row div {
+	float: left;
+	width: 23%;
+	text-align: right;		
+	border-right: 1px solid #CCC;	
+	margin: 0;
+	padding: 0 2px 0 0;
+}
+
+.div-CR-calrange-row {
+	float: left;
+	width: 100%;
+	border-bottom: 1px solid #CCC;	
+	height: 20px;
+	line-height: 20px;
+}
+
+.div-CR-calrange-row div {
+	float: left;
+	width: 32.3%;
+	text-align: right;
+	border-right: 1px solid #CCC;
+	padding: 0 2px 0 0;
+}
+
+.last-CR-calrange-row {
+	border: none !important;
+}
+
+#div-analysis {
+	float: left;
+	width: 32%;
+}
+
+#div-analysis > div {
+	margin-top: 5px;
+}
+
+#div-analysis > div .analysis-data {
+	width: 125px;
+	display: inline-block;
+}
+
+#firstAnalysis {
+	margin-top: 0 !important;
+}
+
+.divCR-remarks {
+	text-align: left;
+	font-size: 14px;
+}
+
+#txtRemarks {
+	width: 99.7%;
+	font-size: 11px;
+	resize: none;
+	border: 1px solid #ccc;
+	overflow: hidden;
+}
+
+.ppm div {
+	float: left;
+	clear: right;
+}
+
+.analysis-checkboxes {	
+	display: inline-block;
+}
+
+.analysis-checkboxes div {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+#div-sign-Header {
+	margin-top: 10px;
+	float: left;
+	width: 99%;
+}
+
+
+.divSignCompany-text {
+	width: 82%;
+	float: left;
+	font-size: 14px;
+	border-right: 1px solid #777;
+}
+
+.div-sign-date {
+	float: left;
+	width: 15%;
+	text-align: left;
+	font-size: 14px;	
+	padding-left: 3px;
+}
+
+
+.div-user-row {
+	float: left;
+	clear: both;
+	width: 100%;
+	margin-top: 10px;
+}
+
+
+.div-user-row .text {
+	vertical-align: bottom;
+	width: 10%;
+	padding-top: 10px;
+	float: left;
+}
+
+
+.small-input, .large-input {
+	float: left;
+	padding: 8px;
+	font-size: 10px;	
+}
+
+.large-input {
+	width: 69% !important;
+}
+
+.small-input {
+	width: 15.7% !important;
+}
+
+.meter-row {
+	width: 25% !important;
+	border: none !important;	
+}
+
+.ppm {
+	float: left;
+	clear: both;
+}
+
+
+.h2o {
+	float: left;
+	clear: both;
+}
+/***********************************/

@@ -1,0 +1,176 @@
+/*  Tabs CSS */
+.tabsContent{
+ padding-top:10px;
+}
+
+.tab-current{
+  	background-image: url(../images/tab-selected.png) !important;
+}
+
+ .menuLnkVisible {
+     display:block;
+}
+
+ .menuLnkHidden {
+    display:none;
+}
+
+
+.tabs {
+	margin: 0;
+	padding:0px;
+	line-height: 100%;
+    border-bottom:1px solid #b3b3b3;
+}
+
+.lastTab-clicked  {
+
+   width:28px !important;
+	margin-left: -5px !important;
+	background-image: url(../images/tab-dropdown-arrow-press.png) !important;
+}
+
+.lastTab  {
+
+	width:28px !important;
+	margin-left: -5px !important;
+	background-image: url(../images/tab-dropdown-arrow-default.png) !important;
+}
+
+.lastTab:hover ,.lastTab-Active:hover  {
+	background-image: url(../images/tab-dropdown-arrow-hover.png) !important;
+}
+
+.lastTab-hover {
+	background-image: url(../images/tab-dropdown-arrow-hover.png) !important;
+}
+
+.lastTab-Active  {
+
+	width:28px !important;
+	margin-left: -5px !important;
+	background-image: url(../images/tab-dropdown-arrow-active.png) !important;
+}
+
+
+.lastTab  img
+{
+ padding-top:20px;
+}
+
+.tabs li {
+    width:95px;
+	float: left;
+	list-style: none;
+	margin-right: 5px;
+	text-align:center;
+	height:42px;
+    background-image: url(../images/tab-normal.png);
+	position:relative;
+}
+
+
+/* main level link */
+.tabs a {
+	text-decoration: none;
+	position:relative;
+    top:11px;
+}
+
+
+
+/* main level link hover */
+ .tabs li:hover  {
+ background-image: url(../images/tab-hover.png);
+cursor:pointer;
+}
+
+ .tabs li:hover >a {
+ color:#fff !important;
+}
+
+ .tabs .tab-current:hover >a {
+ color:#222 !important;
+ cursor:default ;
+}
+
+.tab-current:hover{
+cursor:default !important;
+}
+
+/* sub levels link hover */
+.tabs ul li:hover  {
+	background-image: none;
+	border-bottom: 1px solid #fff;
+	border-top: 1px solid #fff;
+	background-color:#666;
+    cursor:pointer;
+}
+
+
+/* dropdown */
+.display-menu {
+	display: block !important;
+	z-index:10 !important;
+}
+
+/* level 2 list */
+.tabs ul {
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 106px;
+	position: absolute;
+	top: 43px;
+	left: -84px;
+}
+
+.tabs ul li {
+	float: none;
+	margin: 0;
+	padding: 0 0 0 5px;
+	width:100%;
+	color:#fff;
+    height:35px;
+	text-align:left;
+    background-image:none;
+	border-bottom: 1px solid #666;
+	border-right:2px solid #2d2d2d;
+	border-left:2px solid #2d2d2d;
+	background-color:#8c8c8c;
+}
+
+/* 2nd level link */
+.tabs ul li a {
+	text-decoration: none;
+	position:relative;
+    top:5px;
+}
+
+
+.lastMenu {
+	width:100%;
+    border-bottom:2px solid #222  !important;
+	-webkit-border-radius:0px 0px 10px 10px !important;
+	-moz-border-radius: 0px 0px 10px 10px !important;
+	border-radius:0px 0px 10px 10px !important;
+}
+
+.tabs .no-right-border-Radius{
+  background-image: url(../images/tab-dropdown-left-normal.png) ;
+  width:83px;
+
+}
+.tabs .no-right-border-Radius:hover {
+  background-image: url(../images/tab-dropdown-left-hover.png) ;
+}
+
+/* clearfix */
+.tabs:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}

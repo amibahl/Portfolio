@@ -1,0 +1,44 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/tab-plugin.css"/>	
+		<script src="Scripts/jquery-1.7.2.min.js"></script>
+		<script src="Scripts/jquery.tab.js"></script>
+		<script src="Scripts/jquery.tab-content.js"></script>
+		<script src="Scripts/tab-plugin.js"></script>	
+		<script src="Scripts/jquery.tmpl.js"></script>	
+	</head>
+	<title>Tab Toggle Plugin</title>
+	<body>
+		<button id ="tabButton" type="button" value="tabButton">Tab Plugin</button>
+		<button id="toggleButton" type="button" value="toggleButton">Toggle Plugin</button>
+		<div id ="tabs-template" class="htmlTabs">	
+		</div>
+		
+		<div class="show-tab">	
+		</div>
+		
+	</body>
+</html>
+
+
+ <script id="tabsTemplate" type="text/x-jQuery-tmpl">	
+	<ul class="{{if theme == 'tabs_plugin'}}tabs{{else}}toggle{{/if}}">
+		{{each displayedTabs}}
+			<li>
+				<a class="${tabClass}" href="${hrefDetails}" id ="${id}">${tabContent}</a>
+			</li>
+		{{/each}}
+		{{if theme == 'tabs_plugin'}}
+			<li class="lastTab">
+				<a class="tabSelect T1" href="#lastTab"></a>
+				<ul class="tabDropDown">
+					{{each hiddenTabs}}
+						<li>
+							<a class="${hiddenTabClass}" href="${hiddenHrefDetails}" id ="${hiddenId}">${hiddenTabContent}</a>
+						</li>
+					{{/each}}
+				</ul>
+			</li>
+		{{/if}}
+	</ul>
+</script>

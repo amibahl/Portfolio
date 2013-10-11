@@ -1,0 +1,150 @@
+.graphToolTip
+{
+ border-radius: 5px;
+ width:220px; 
+ z-index:20;
+ font-size:15px;
+}
+
+.graphToolTipTop
+{
+ width:90%;
+ padding:5px;
+ border-bottom: solid 1px #fff;
+ margin:auto;
+}
+
+.graphToolTipBottom
+{
+ text-align:center;
+ width:90%;
+ padding:5px;
+ margin:auto;
+}
+
+.graphSeries 
+{
+ width:90%;
+ display:inline-block;
+}
+
+.graphSeries > div
+{
+  padding-right:15px;
+  padding-top:20px;
+  width:125px;
+  display:inline-block;
+
+}
+.graphSeries span
+{
+  padding-left:10px;
+
+}
+
+.graphLegend
+{
+  width:38px;
+}
+
+.tooltipValue
+{
+ font-size:28px;
+}
+
+.placeHolder
+{
+
+width:640px;
+height:250px;
+margin-top:8px
+
+}
+
+.placeHolder2
+{
+
+width:640px;
+height:200px;
+margin-top:8px
+
+}
+
+.placeHolder5
+{
+
+width:978px;
+height:200px;
+margin-top:8px
+
+}
+
+.placeHolder4
+{
+
+width:600px;
+height:200px;
+margin-top:8px;
+text-align:center;
+margin:auto;
+
+}
+
+.placeHolder3
+{
+
+width:978px;
+height:180px;
+margin-top:8px
+
+}
+
+.tickLabel
+{
+font: 12px arial;
+ /*color:#fff;*/
+ font-weight:normal;
+}
+.axisLabels{
+  font: 12px arial;
+
+}
+
+.graph-expand{
+ color:#fff;
+ width:60px;
+ display:inline-block;
+ float:right;
+ height:25px;
+ padding-top:20px;
+ cursor:pointer;
+}
+
+.graph-container {
+  margin:auto;
+  padding-bottom:20px;
+  padding-left:5px;
+}
+
+
+.graph-container span{
+ color:#000 !important;
+}
+
+.graph-container .graphSeries 
+{
+ width:100%;
+ display:inline-block;
+}
+
+.graph-container .graphSeries > div
+{
+  padding-right:15px;
+  padding-top:20px;
+  width:145px;
+  display:inline-block;
+}
+
+.graph-series-container{
+ width:100%;
+}

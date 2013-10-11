@@ -1,0 +1,132 @@
+body{
+	background-color: #B8B8B8;
+}
+
+.tabs{
+	border-bottom: 1px solid #FFFFFF;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+.htmlTabs{
+	margin-top: 20px;
+}
+
+.tabs li{
+	background-image: url("../images/tab-normal.png");
+    float: left;
+    height: 42px;
+    list-style: none outside none;
+    margin-right: 5px;
+    text-align: center;
+    width: 95px;
+}
+
+.tabs li:hover{
+	background-image: url("../images/tab-hover.png");
+	cursor: pointer;
+}
+
+.tabs a{
+	text-decoration: none;
+	top: 10px;
+	position: relative;
+}
+
+.toggle{
+	margin: 0;
+    padding: 0;
+}
+
+.toggle li{
+    background-color: #4C4C4C;
+    float: left;
+    height: 25px;
+    width: 100px;
+	list-style: none;
+}
+
+.toggle a{
+	color: #FFFFFF;
+	font: 12px;
+	padding-left: 25px;
+	text-decoration: none;
+}
+
+.toggle li:hover{
+	cursor: pointer;
+	border: 1px solid red;
+}
+
+.T1{
+	font: 12px arial;
+	color: #000000;
+}
+
+.lastTab{
+	background-image: url("../images/tab-dropdown-arrow-default.png") !important;
+    margin-left: -5px !important;
+    width: 28px !important;
+}
+
+.lastTab:hover{
+	background-image: url("../images/tab-dropdown-arrow-hover.png") !important;
+}
+
+.noRightBorder{
+	background-image: url("../images/tab-dropdown-left-normal.png") !important;
+	width: 83px !important;
+}
+
+.noRightBorder:hover{
+	background-image: url("../images/tab-dropdown-left-hover.png") !important;
+}
+
+.hiddenTabs{
+    margin-left: -87px;
+    margin-top: 42px;
+    padding: 0;
+}
+
+.tabs ul li {
+    background-color: #8C8C8C;
+    background-image: none !important;
+    border-bottom: 1px solid #666666;
+    border-left: 2px solid #2D2D2D;
+    border-right: 2px solid #2D2D2D;
+    color: #FFFFFF;
+    float: none;
+    height: 35px;
+    margin: 0;
+    padding: 0 0 0 5px;
+    text-align: left;
+    width: 102px;
+}
+
+.lastMenuItem{
+	border-radius: 0 0 10px 10px !important;
+}
+
+.tabDropDown{
+	height: 80px;
+    margin-left: -123px;
+    margin-top: 42px;
+	display: none;
+}
+
+.active{
+	background-color: #0084FF !important;	
+}
+
+.content{
+	clear: both;
+	height: 200px;
+	width: 400px;
+	background-color: #B8B8B8;
+	display: none;
+}
+
+.show-content{
+	display: block;
+}

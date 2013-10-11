@@ -1,0 +1,137 @@
+.carousel
+	{
+	width:100%;
+	height:auto;
+	float:left;
+	}	
+.carousel-content
+{
+	margin: 0 auto;
+    width: 998px;
+	padding: 10px 0 0;
+	 height: 90px;
+	 overflow:hidden;
+}	
+.carousel-dim
+	{
+	width:110px;
+	height:90px;
+	/*margin-left:8px;*/
+	float:left;
+	}
+	
+.carousel-dim-first {
+    margin-left: 0;
+}
+
+
+.head{
+	margin:auto; 
+	margin-top:10px;
+	width: auto; 
+	text-align:center;
+}	
+.value
+	{
+	margin:auto;
+	margin-top:10px;
+	width: auto;
+	text-align:center;	
+	}
+	
+.value1
+	{
+	margin:auto;
+	margin-top:10px;
+	width: auto;
+	text-align:center;	
+	}
+		
+.status
+	{
+	margin:auto;
+	margin-top:5px; 
+	width: auto;
+	text-align:center;
+	}
+.alarm{	
+	background-image:url("../images/app-bt-red-normal.png");	
+}
+
+.alarm:hover{
+	background-image:url("../images/app-bt-red-hover.png");
+}
+.alarm:active{
+	background-image:url("../images/app-bt-red-pressed.png");
+}	
+.shutdown{
+	background-image:url("../images/app-bt-black-normal.png");
+}
+.shutdown:hover{
+	background-image:url("../images/app-bt-black-hover.png");
+}
+.shutdown:active {
+background-image:url("../images/app-bt-black-pressed.png");
+}
+	
+.plung{
+	background-image:url("../images/app-bt-green-normal.png");
+}
+.plung:hover{
+	background-image:url("../images/app-bt-green-hover.png");
+}
+.plung:active{
+	background-image:url("../images/app-bt-green-pressed.png");
+}
+		
+.status1
+	{
+	margin:auto;
+	margin-top:5px; 
+	width: auto;
+	text-align:center;
+	}
+	
+.AGA{
+	background-image:url("../images/app-bt-blue-normal.png");
+}
+.AGA:hover{
+	background-image:url("../images/app-bt-blue-hover.png");
+}
+.AGA:active{
+	background-image:url("../images/app-bt-blue-pressed.png");
+}
+
+.valve{
+	background-image:url("../images/app-bt-yellow-normal.png");
+}
+.valve:hover{
+	background-image:url("../images/app-bt-yellow-hover.png");
+}
+.valve:active{
+	background-image:url("../images/app-bt-yellow-pressed.png");
+}
+
+.PID{
+	margin-right:0px;
+}
+
+.car-hit-area-left{
+height:90px;
+width:25px;
+background: url("../images/left-arrow.png") no-repeat scroll center center transparent;
+}
+.car-hit-area-right{
+height:90px;
+width:25px;
+background: url("../images/right-arrow.png") no-repeat scroll center center transparent;
+}
+
+
+
+.carousel-content  > .viewport { float: left; width: 950px; height: 110px; overflow: hidden; position: relative;  margin: 0 10px; }
+.carousel-content  > .buttons { display: block; float: left; }
+.carousel-content > .disable { visibility: hidden; }
+.carousel-content > .viewport  > .overview { list-style: none; position: absolute; padding: 0; margin: 0; left: 0; top: 0; }
+.carousel-content > .viewport  > .overview li{ float: left; margin: 0 8px 0 0;width: 108px;}
+					

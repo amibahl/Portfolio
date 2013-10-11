@@ -1,0 +1,342 @@
+//css
+body { font:76% verdana; }
+.bgCover { background:#000; position:absolute; left:0; top:0; display:none; overflow:hidden }
+.overlayBox {
+	position:absolute;
+	display:none;
+	width:670px;
+	height:auto;
+	background:#fff;
+}
+
+.overlayBoxBig {
+	position:absolute;
+	display:none;
+	width:670px;
+	height:540px;
+	background:#fff;
+	
+}
+.overlayBoxBig1 {
+	position:absolute;
+	display:none;
+	width:315px;
+	height:300px;
+	background:#fff;
+	
+}
+
+
+.overlayContentBig {
+	height:466px !important;
+
+	
+}
+
+.overlayContent {
+	/*padding:10px;*/
+	float:left;
+	width:670px;
+	height:auto;
+	
+}
+.overlayContentgeneral .T5 {
+	/*padding:10px;*/
+	float:left;
+	
+	height:auto;
+	color: #000000;
+	
+	
+}
+
+
+.closeLink {
+	text-decoration: none;
+	cursor:pointer;
+}
+a:hover , a.T9{ text-decoration:none; }
+
+h2 {
+	padding:5px;
+	margin:0;
+}
+
+.overlay-header{
+width:650px;
+height:33px;
+background:#999;
+float:left;
+text-transform:capitalize;
+padding:10px 10px 0 10px;
+}
+.overlay-header1{
+width:495px;
+height:33px;
+background:#999;
+float:left;
+text-transform:capitalize;
+padding:10px 10px 0 10px;
+}
+
+.nav-bar{
+width:100%
+height:34px;
+float:left;
+}
+
+.sub-header{
+float: left;
+height: 28px;
+margin: 15px 10px 0;
+width: 650px;
+}
+.sub-header1{
+float: left;
+height: 28px;
+margin: 15px 10px 0;
+width: 495px;
+}
+.container{
+width:650px;
+height: auto;
+margin:0 10px;
+float:left;
+}
+.generalcontainer{
+width:495px;
+height: auto;
+margin:0 10px;
+float:left;
+}
+
+.overlay-left{
+width:293px;
+height: auto;
+float:left;
+}
+
+.overlay-right{
+width:293px;
+height: auto;
+float:right;
+padding-right:5px;
+}
+
+.overlay-footer{
+background: none repeat scroll 0 0 #999999;
+float: left;
+height: 43px;
+padding: 0 10px;
+width: 650px;
+}
+.overlay-footer1{
+background: none repeat scroll 0 0 #999999;
+float: left;
+height: 43px;
+padding: 0 10px;
+width: 495px;
+}
+
+.overlayContent .T5{
+color:#000;
+}
+
+.overlayContent hr{
+border: 1px solid #000000;
+color: red;
+float: left;
+margin: 0 10px;
+width: 650px;
+}
+
+.overlay-bot hr
+{
+ border: 1px solid #000000;
+color: red;
+float: left;
+margin: 0 10px 10px 0;
+width: 650px;
+}
+
+.left-text{
+ color: #000000;
+    float: left;
+    height: auto;
+    margin-left: 5px;
+    padding: 8px 0 14px 0;
+    text-transform: capitalize;
+    width: 147px;
+}
+
+.row1{
+float:left;
+border-bottom: 1px solid #000000;
+/*padding: 14px 0 14px 5px;
+margin: 10px 0 0;*/
+width: 293px;
+height:40px;
+}
+.row11{
+float:left;
+border-bottom: 1px solid #000000;
+/*padding: 14px 0 14px 5px;
+margin: 10px 0 0;*/
+width: 495px;
+height:40px;
+}
+
+.rt-checkbox{
+float:right;
+padding: 10px 10px 0 0;
+}
+
+.overlay-top,.overlay-bot{
+float:left;
+width:650px;
+height:auto;
+margin:20px 0;
+}
+
+.overlay-bot .sub-header{
+margin: 0;
+}
+
+.incrementbox{
+float: right;
+height: 38px;
+margin-left: 10px;
+margin-right: 5px;
+width: 126px;
+}
+
+
+.input-box{
+float: left;
+padding-top: 5px;
+}
+
+.textbox{
+height: 22px;
+width: 80px;
+}
+
+.increment-image{
+float: left;
+height: 28px;
+padding-top: 5px;
+position: relative;
+width: 24px;
+}
+
+.increment-up {
+position: absolute;
+}
+
+.increment-down{
+position: absolute;
+top: 19px;
+}
+
+.cancel-btn{
+background:url('../images/secondary-bt-default.png') no-repeat;
+width:142px;
+height:24px;
+float:left;
+margin-top: 10px;
+text-align: center;
+}
+
+.save-btn, .addUser-btn, .updateUser-btn, .deleteUser-btn{
+background:url('../images/primary-bt-default.png') no-repeat;
+width:142px;
+height:24px;
+float:right;
+margin-top: 10px;
+text-align: center;
+}
+
+a.launchLink{
+text-decoration: none;
+}
+
+
+
+/***********************SMALL OVERLAY start*************/
+
+#oriface,#od-orifice,#sptap-orifice, #addUserOverlay,#updateUserOverlay,#deleteUserOverla{
+position:absolute;
+	display:none;
+	width:354px;
+	height:auto;
+	background:#fff;
+}
+
+#fixed-temp {
+    background: none repeat scroll 0 0 #FFFFFF;
+    display: none;
+    height: auto;
+    position: absolute;
+    width: 354px;
+}
+
+.overlayBoxSmall {
+	position:absolute;
+	display:none;
+	width:354px;
+	height:auto;
+	background:#fff;
+	float:left;
+} 
+
+.overlay-headerSmall{
+width:334px;
+height:33px;
+background:#999;
+float:left;
+text-transform:capitalize;
+padding:10px 10px 0 10px;
+}
+
+.containerSmall{
+width:354px;
+height:auto;
+float:left;
+margin: 20px 0;
+}
+
+.overlay-topSmall{
+float:left;
+width:354px;
+height:auto;
+margin-bottom:20px;
+}
+
+.overlay-midSmall{
+float:left;
+width:334px;
+height:auto;
+padding-left: 10px;
+padding-right:10px;
+}
+
+
+.row1Small{
+float:left;
+border-bottom: 1px solid #000000;
+/*padding: 14px 0 14px 5px;
+margin: 10px 0 0;*/
+width: 334px;
+height:38px;
+}
+
+
+.overlay-footerSmall{
+background: none repeat scroll 0 0 #999999;
+float: left;
+height: 43px;
+padding: 0 10px;
+width: 334px;
+/*margin-top: 143px;*/
+}
+/***********************SMALL OVERLAY end***************/

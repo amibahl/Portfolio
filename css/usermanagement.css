@@ -1,0 +1,118 @@
+/*****************User Management Start*********/
+.userManagementTableOuterDiv {
+overflow-x: auto;
+display: block;
+height: auto;
+width:642px;
+}
+
+.userManagementTableOuterDiv .modTableCell{
+	text-transform: none;
+}
+
+.addUserNameText {
+    border: 1px none #000000;
+    color: #000000;
+    font-size: 12px;
+    font-weight: normal;
+    text-align: left;
+}
+
+.txtBoxAddUser, .txtBoxAddPswd, .txtBoxAddUserRetype, .txtBoxUpdateUserCurrPswd, .txtBoxUpdateUserNewPswd, .txtBoxUpdateUserRetype{
+	font-weight: bold;
+    height: 20px;
+    width: 100px;
+}
+
+.userManagementinput-box {
+    float: left;
+	width:100px;
+	padding-top: 5px;
+}
+
+.userManagementinput-box :focus{
+	border:2px solid #0096EA ;
+	background-color:#CCFFFF;
+	
+}
+
+.userOverlayRow{
+    border-bottom: 1px solid #999999;
+    float: left;
+    height: 38px;
+    padding: 5px 20px 0;
+    width: 294px;
+}
+
+.userUpdatePassword{
+	float: left;
+    width: 324px;
+	display:none;
+}
+
+.userUpdatePrivilege{
+	float: left;
+    width: 324px;
+	display:none;
+}
+
+.userOverlayRowLeft{
+	color: #000000;
+    float: left;
+    height: auto;
+    margin-left: 5px;
+    padding: 8px 0 14px;
+    text-transform: capitalize;
+    width: 162px;
+}
+
+
+.userLastComboItem  {
+	width:100%;
+	border-bottom:1px solid #2d2d2d !important;
+	-webkit-border-radius:0px 0px 5px 5px !important;
+	-moz-border-radius: 0px 0px 5px 5px !important;
+	border-radius:0px 0px 5px 5px !important;
+}
+
+.userFirstComboItem  {
+	width:100%;
+	border-top:1px solid #2d2d2d !important;
+    -webkit-border-radius:5px 5px 0px 0px !important;
+	-moz-border-radius:5px 5px 0px 0px !important;
+	border-radius:5px 5px 0px 0px !important;
+}
+
+.incrementboxUser{
+    float: left;
+    height: 38px;
+    width: 126px;
+}
+
+.addUserWarning, .addUserPswdWarning, .addUserPswdMismatchWarning, .updateUserPswdWarning, .updateUserPswdMismatchWarning, .up_error_row{
+	float: left;
+	width: 334px;
+	background-color: #FFD7D7;	
+	padding: 20px 0 20px 20px;
+	display: none;
+}
+
+.userWarningImg{
+	background: url("../images/errors-messaging-alert-icon.png") no-repeat scroll 0 0 transparent;
+    color: white;
+    float: left;
+    height: 38px;
+    padding-right: 20px;
+    width: 28px;
+}
+
+.updateUserPswdWarningBig{
+	float:left;
+	padding-bottom: 2px;	
+	text-transform:capitalize;
+}
+
+.updateUserPswdWarningSmall{
+	float: left;
+}
+/*****************User Management End*********/
