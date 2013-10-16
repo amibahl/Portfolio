@@ -1,0 +1,591 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="css\style.css" />
+<link rel="stylesheet" type="text/css" href="css\tabs.css" />
+<link rel="stylesheet" type="text/css" href="css\plot.css" />
+<link type="text/css" href="lib/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script src="js/jquery.hashchange.min.js" type="text/javascript"></script>
+<script src="js/jquery.easytabs.min.js" type="text/javascript"></script>
+<script src="js/excanvas.min.js" type="text/javascript"></script>
+
+
+<!-- the mousewheel plugin - optional to provide mousewheel support -->
+<script type="text/javascript" src="lib/jquery.mousewheel.js"></script>
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="lib/jquery.jscrollpane.js"></script>
+
+<!--Flot-Graph-->
+<script type="text/javascript" src="js/extended_plot.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jquery.flot.js"></script>
+	<script language="javascript" type="text/javascript" src="js/jquery.flot.stack.js"></script>
+	
+<!--End for Flot Graph-->
+
+<!-----sitemapSparkline start---------->
+<script language="javascript" type="text/javascript" src="js/jquery.tinycarousel.js"></script>
+<script language="javascript" type="text/javascript" src="js/jquery.sparkline.js"></script>
+<script type="text/javascript" src="js/script_sitemap_sparkline.js"></script>
+<!------Sparkline end---->
+
+<script type="text/javascript" src="js/script_facility.js"></script>
+<script language="javascript" type="text/javascript" src="js/tabs.js"></script>
+
+<script>
+  $(document).ready( function() {
+      //$('#tab-container').tabs();
+	  //$('.scroll-pane').jScrollPane();
+	 
+    });
+</script>
+</head>
+<body>
+<div id="outer-wrap">
+	<div id="inner-wrap">
+	<div class="top-nav">
+			<div class="top-nav-content">
+				<div class="left-nav">
+				<ul class="left-menu">
+					<li><a href="#">ABB <span>TOTAL</span><span class="title">FLOW<span></a> <span class="separator">|</span></li>
+					<li>
+						<div style="display:inline-block;position:relative">
+						<div><a href="#" class="T9">Operator </a><div class="down-arrow"></div></div>
+						<ul style=" left: 0;padding: 0; position: absolute;top: 25px;display:none">
+							<li style="background-color: rgb(140, 140, 140); display: block; height: 30px"><a href="#" class="T9">Administrator </a></li>
+							<li  style="background-color: rgb(140, 140, 140); display: block; height: 30px"><a href="#" class="T9">Technician </a></li>
+						</ul>
+						</div>
+						<span class="separator">|</span>
+					</li>
+					<li><a href="#">?</a></li>			
+				</ul>
+				</div>
+				<div class="right-nav">
+					<div class="inline T9">abcd@abcd.com</div>
+					<div class="down-arrow"></div>
+			
+				</div>
+			</div>	
+	</div>
+	  
+		<div class="fac-con">
+			<div class="fac-content">
+				<div class="left-con">
+					<div class="sitemap-arrow-box-collapsed"></div>
+					<div class="breadcrumb-text T5">Facility</div>
+				</div>
+				<div class="right-con">
+					<div class="refresh">Last Refreshed
+						<div class="time">12/28/12 at 10:00:30 AM
+						</div>
+					
+					</div>
+					<div class="monitor-btn"><a href="#"><span class="T9 monitor-text">Monitoring Off</span><div class="down-arrow"></div></a></div>
+				</div>
+           </div>				
+		</div>
+<!----------SiteMap start---------->	
+		<div class="sitemapPage">
+			<div class="sitemapPage-content">
+				<div class="sitemapgraph-con">
+				<div class="sitemapLeft">
+					<div class="sitemapHeading T5">
+						<div class="sitemapHeadingWells">Wells</div>
+						<div class="sitemapHeadingTanks">Tanks</div>
+					</div>
+					<div class="sitemapContent">
+					<div class="sitemapHeadingSubFacility T7">North Sub-Facility</div>
+					<div class="sitemapLeftside">
+					<div class="sitemapLeftsideWells">
+						<div class="sitemapLine">
+							<div class="sitemapLeftside-line-odd">
+								<div class="sitemapLeftside-line-well T8">North Well 1 &nbsp;
+									<div id="northwell1-spark" class="sitemapSpark">
+									</div>
+								</div>
+								<div class="sitemapTriangle-pic">
+									<div class="sitemapOrange-alert"></div>
+								</div>
+							</div>
+					
+							<div class="sitemapLeftside-line-even">
+								<div class="sitemapLeftside-line-well T8">North Well 2&nbsp;
+									<div id="northwell2-spark" class="sitemapSpark">
+									</div>
+								</div>
+								<div class="sitemapTriangle-pic">
+									<div class="sitemapOrange-alert"></div>
+									<div class="sitemapRed-alert"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="sitemapLine">
+							<div class="sitemapLeftside-line-odd">
+								<div class="sitemapLeftside-line-well T8">North Well 3 &nbsp;
+									<div id="northwell3-spark" class="sitemapSpark">
+									</div>
+								</div>
+								<div class="sitemapTriangle-pic">
+									<div class="sitemapRed-alert"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+				<div class="sitemapLeftsideTanks">
+					<div class="sitemapTank">
+								<div class="sitemapTank-dat T8">North Tank - 1</div>
+					</div>
+					<div class="sitemapTank">
+								<div class="sitemapTank-dat T8">North Tank - 2</div>
+					</div>
+					<div class="sitemapTank">
+								<div class="sitemapTank-dat T8">North Tank - 3</div>
+					</div>
+					<div class="sitemapTank">
+								<div class="sitemapTank-dat T8">North Tank - 4</div>
+					</div>
+				</div>
+					</div>
+				
+				<div class="sitemapHeadingSubFacility T7">East Sub-Facility</div>
+				<div class="sitemapLeftside">
+					<div class="sitemapLeftsideWells">
+						<div class="sitemapLine">
+							<div class="sitemapLeftside-line-odd">
+								<div class="sitemapLeftside-line-well T8">East Well 1 &nbsp;
+									<div id="eastwell1-spark" class="sitemapSpark">
+									</div>
+								</div>
+							</div>
+					
+							<div class="sitemapLeftside-line-even">
+								<div class="sitemapLeftside-line-well T8">East Well 2&nbsp;
+									<div id="eastwell2-spark" class="sitemapSpark">
+									</div>
+								</div>
+								<div class="sitemapTriangle-pic">
+									<div class="sitemapOrange-alert"></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="sitemapLeftsideTanks">
+						<div class="sitemapTank">
+								<div class="sitemapTank-dat T8">East Tank - 1</div>
+						</div>
+						<div class="sitemapTank">
+							<div class="sitemapTank-dat T8">East Tank - 2</div>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="sitemapHeadingSubFacility T7">South Sub-Facility</div>
+				<div class="sitemapLeftside">
+					<div class="sitemapLeftsideWells">
+						<div class="sitemapLine">
+							<div class="sitemapLeftside-line-odd">
+								<div class="sitemapLeftside-line-well T8">South Well 1 &nbsp;
+									<div id="southwell1-spark" class="sitemapSpark">
+									</div>
+								</div>
+							</div>
+					
+							<div class="sitemapLeftside-line-even">
+								<div class="sitemapLeftside-line-well T8">South Well 2&nbsp;
+									<div id="southwell2-spark" class="sitemapSpark">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				
+					<div class="sitemapLeftsideTanks">
+						<div class="sitemapTank">
+								<div class="sitemapTank-dat T8">South Tank - 1</div>
+						</div>
+						<div class="sitemapTank">
+							<div class="sitemapTank-dat T8">South Tank - 2</div>
+						</div>
+					</div>
+				</div>
+			</div>
+				</div>
+				<div class="sitemapRightside">
+				<div class="sitemapFac-apps T5">Facility Apps</div>
+				<div class="sitemapList">
+					<div class="sitemapData-pts T8">Data Points</div>
+				</div>
+				<div class="sitemapList">
+					<div class="sitemapData-pts T8">Value Control</div>
+				</div>
+				<div class="sitemapList">
+					<div class="sitemapData-pts T8">PID</div>
+				</div>
+				</div>
+				</div>
+			</div>
+		</div>
+<!----------SiteMap end---------->			
+				
+		 <div class="page">	
+	 <div class="page-content">	
+	   <div class="fac-leftside">
+		<div class="graph-con">
+			<div class="top-con">
+				<div class="dbgraph-heading T3">Production</div>
+			<div>
+			<div class="tp-box">	
+				<div class="box"></div>
+				<div class="total-prod">
+					<div class="left-bg"></div>
+					<div class="mid-bg T9">Total Production</div>					
+					<div class="right-bg"><img src="images/small-arrow-dw-black.png"/></div>
+				</div>	
+			</div>	
+				<div class="totprod-box">
+					<div class="box"></div>
+					<div class="total-prod">
+					<div class="left-bg"></div>
+					<div class="mid-bg T9">North Well</div>					
+					<div class="right-bg"><img src="images/small-arrow-dw-black.png"/></div>
+				</div>	
+				</div>
+			</div>
+			</div>
+			<div class="fac-bot-con">
+				<div id="placeholder" class="fac-graph-holder">graph bars</div>
+				<div class="right-blocks">
+					<div class="yesterday T5">Yesterday's Total</div>
+					<div class="production T5">Production</div>					
+					<div class="numbers T1">2,027,733</div>
+					<div class="mmcf T10a">MMCF</div>
+					<div style="clear:both"></div>
+					
+					<div class="North"><a href="#"><img src="images/link-arrow.png"/></a>North Well</div>					
+					<div class="nw-yday T8">Yesterday</div>
+					<div class="nw-yday T8">Today</div>
+					<div class="nw-num T6">1,468,123</div>
+					<div class="nw-num T6">1,272,733</div>
+					<div style="clear:both"></div>
+					
+					<div class="plunger T8">Plunger</div>
+					<div style="clear:both"></div>
+					<div class="enabled T6">Enabled</div>
+					<div class="wait T8">..........Wait to Open</div>
+					
+				
+				</div>
+			
+			</div>
+			
+			
+			</div>
+			<div class="tab-sec">
+			 
+			 <div class="tab-container">
+
+				  <ul class='tabs'>
+					<li class='tab'><a class="T11" href="#tabs1">Alarms</a></li>
+					<li class='tab'><a class="T11" href="#tabs2">Events</a></li>
+					<li class='tab'><a class="T11" href="#tabs3">Data Points</a></li>					
+					<li class='tab'><a class="T11" href="#tabs4">Pad Level Apps</a></li>
+				  </ul>					
+			    
+				  <div id="tabs1" class="tab-con scroll-pane">				  
+					
+					<div class="fac-row T8">
+						<div class="con-left T7"><div class="row-txt">North Tank</div></div>
+						<div class="con-right">
+							<div class="release-date">Released on june 15,2012</div>
+							<div class="edit-arrow"><img src="images/link-arrow.png"></div>
+						</div>	
+					</div>					
+					
+					<div class="fac-row T8">
+						<div class="con-left T7">
+						<div class="triangle"></div>
+						<div class="row-txt">North tank 3</div>
+					</div>
+					<div class="con-right">
+						<div class="release-date">Released on june 15,2012</div>
+						<div class="edit-arrow"><img src="images/link-arrow.png"></div>
+					</div>
+					</div>					
+					
+					<div class="fac-row T8">
+						<div class="con-left T7">
+							<div class="triangle-8"></div>
+							<div class="row-txt">North Well2/ Plunger</div>
+						</div>
+							
+						<div class="con-right">
+							<div class="release-date">Acknowledged on July 1,2012</div>
+							<div class="edit-arrow"><img src="images/link-arrow.png"></div>
+						</div>	
+					</div>
+					
+					
+					<div class="fac-row  T8">
+					<div class="con-left T7">
+						<div class="row-txt">North Well 1/ Plunger</div>
+					</div>
+							
+					<div class="con-right">
+						<div class="release-date">Acknowledged on July 2,2012</div>
+						<div class="edit-arrow"><img src="images/link-arrow.png"></div>
+						</div>
+					</div>					
+					
+					<div class="fac-row  T8">
+					<div class="con-left T7">
+						<div class="row-txt">North Well 1/ Plunger</div>
+					</div>
+							
+					<div class="con-right">
+						<div class="release-date">Acknowledged on July 2,2012</div>
+						<div class="edit-arrow"><img src="images/link-arrow.png"></div>
+						</div>
+					</div>
+					<!-- content -->
+				  </div>
+				  <div id="tabs2" class="tab-con scroll-pane2">
+					<!-- Events content-->
+					<div class="fac-row T8">
+						<div class="con-left-events T7"><div class="row-txt">Shutdown-2</div></div>
+						<div class="con-right-events">
+							<div class="events">06/04/12 16:43:27</div>
+							<div class="events">ShutDown DI Enable(101.26.0)</div>
+							<div class="edit-arrow"><img src="images/link-arrow.png"></div>
+						</div>	
+					</div>	
+					<div class="fac-row T8">
+						<div class="con-left-events T7"><div class="row-txt">Pad Controller-1</div></div>
+					    <div class="con-right-events">
+						    <div class="events">05/29/12 18:51:51</div>
+							<div class="events">Padctl group Size(120.1.2)</div>
+							<div class="edit-arrow"><img src="images/link-arrow.png"></div>
+							
+				        </div>
+					</div>	
+					<div class="fac-row T8">
+						<div class="con-left-events T7"><div class="row-txt">Level Master</div></div>
+						<div class="con-right-events">
+							<div class="events">05/28/12 19:18:15</div>
+							<div class="events">Tank Number Of tanks(51.107.0)</div>
+							<div class="edit-arrow"><img src="images/link-arrow.png"></div>
+							
+						</div>	
+					</div>	
+					<div class="fac-row T8">
+						<div class="con-left-events T7"><div class="row-txt">Level Master</div></div>
+					    <div class="con-right-events">
+						    <div class="events">05/28/12 19:02:15</div>
+							<div class="events">Tank Number Of tanks(51.107.0)</div>
+							<div class="edit-arrow"><img src="images/link-arrow.png"></div>
+							
+				        </div>
+					</div>	
+					<div class="fac-row T8">
+						<div class="con-left-events T7"><div class="row-txt">Level Master</div></div>
+					    <div class="con-right-events">
+						    <div class="events">05/28/12 19:00:15</div>
+							<div class="events">Tank Number Of tanks(51.107.0)</div>
+							<div class="edit-arrow"><img src="images/link-arrow.png"></div>
+				        </div>
+				  </div>
+				  </div>
+					<div id="tabs3" class="tab-con scroll-pane3">
+					<div class="fac-row T8">
+						<div class="con-left T7"><div class="row-txt">Temp(Hold Reg 3
+						)</div></div>
+					    <div class="con-right">
+						    <div class="release-date">0 &deg;F</div>
+							
+				        </div>
+					</div>	
+					<div class="fac-row T8">
+						<div class="con-left T7"><div class="row-txt">Today Volume</div></div>
+						<div class="con-right">
+							<div class="release-date">0 MCF</div>
+							
+						</div>	
+					</div>	
+					<div class="fac-row T8">
+						<div class="con-left T7"><div class="row-txt">Pressure</div></div>
+					    <div class="con-right">
+						    <div class="release-date">0 PSI</div>
+							
+				        </div>
+					</div>	
+					<div class="fac-row T8">
+						<div class="con-left T7"><div class="row-txt">Yesterday's Volume</div></div>
+					    <div class="con-right">
+						    <div class="release-date">1 MCF</div>
+							
+				        </div>
+					</div>	
+						
+				</div>	
+						
+				<div id="tabs4" class="tab-con scroll-pane2">
+					<!-- Pad Level Apps content-->
+					<div class="fac-row T8">
+						<div class="con-left-events T7"><div class="row-txt">Plunger</div></div>
+						 <div class="con-right-events">
+							<div class="edit-arrow"><img src="images/link-arrow.png"></div>							
+				        </div>
+					</div>	
+					<div class="fac-row T8">
+						<div class="con-left-events T7"><div class="row-txt">Valve Control</div></div>
+					    <div class="con-right-events">
+							<div class="edit-arrow"><img src="images/link-arrow.png"></div>							
+				        </div>
+					</div>	
+					<div class="fac-row T8">
+						<div class="con-left-events T7"><div class="row-txt">AGA3</div></div>
+						 <div class="con-right-events">
+							<div class="edit-arrow"><img src="images/link-arrow.png"></div>							
+				        </div>
+					</div>	
+					<div class="fac-row T8">
+						<div class="con-left-events T7"><div class="row-txt">PID Controller</div></div>	
+						 <div class="con-right-events">
+							<div class="edit-arrow"><img src="images/link-arrow.png"></div>							
+				        </div>
+					</div>						
+				  </div>
+			  </div>		
+			
+			</div>
+		</div>
+			<div class="fac-rightside">
+			
+			 <div class="tank-con">
+				<div class="tank-top">
+					<div class="tank T3">Tanks</div>
+					<div class="boxes">
+						<div class="part2"></div>					
+					</div>
+					
+					<div class="box-active">
+					  <div class="part1"><img src="images/tank-active.png"/></div>						
+					</div>
+					
+					<div class="boxes">
+					  <div class="part2"></div>
+					</div>
+					
+					<div class="boxes4">
+						<div class="part2"></div>
+					</div>
+					
+					<div style="clear:both"></div>
+				<div class="bot-box">	
+					<div class="boxes">
+						<div class="part2"></div>
+					</div>
+					<div class="boxes">
+						<div class="part2"></div>
+					</div>
+					<div class="boxes">
+						<div class="part2"></div>
+					</div>
+					<div class="boxes4">
+						<div class="part2"></div>
+					</div>
+				</div>
+				
+				<div style="clear:both"></div>				
+					
+				</div>
+				<div class="tank-mid">
+					<div class="tank-info-section">
+						<div class="north-tank T5"><a href="#"><img src="images/link-arrow.png"/></a>North Tank 2</div>
+						<div class="triangle T7"></div>
+					</div>
+				<div style="clear:both"></div>					
+					<div class="usage T8">Ullage</div>
+					<div class="usage T8">Water</div>
+					<div class="oil T8">Oil</div>
+					<div style="clear:both"></div>
+					<div class="numbers T2">159<span class="ullage-unit T17">MCF</span></div>
+					<div class="numbers T2">4'5"</div>
+					<div class="num-oil T2">1'11"</div>
+					<div style="clear:both"></div>
+				
+				</div>
+				<div class="tank-bot">
+					<div class="quik-task T3">Quick Tasks</div>
+					<div class="qt-left">
+						<div class="fac-shut T8">Facility Shutdown</div>
+						<div class="reset T9">Reset</div>
+					</div>
+					<div style="clear:both"></div>
+					
+					
+					<div class="qt-left">
+						<div class="fac-shut T8">Well Shutdown</div>
+						<div class="reset T9">Choose</div>
+					</div>
+					<div style="clear:both"></div>
+					
+					
+					<div class="qt-left">
+						<div class="fac-shut T8">Calibrate</div>
+						<div class="reset T9">Choose</div>
+					</div>
+					<div style="clear:both"></div>					
+					
+					<div class="qt-left no-border">
+						<div class="fac-shut T8">Optimize</div>
+						<div class="reset T9">Choose</div>
+					</div>
+					<div style="clear:both"></div>
+					
+				
+				</div>
+			
+			  </div>
+		    </div>	
+		</div>	
+	</div>
+	</div>
+</div>	
+</body>
+</html>
+
+<script type="text/javascript">
+  $(document).ready( function() {
+		$('.sitemapPage').hide();
+      $('.tab-container').tabs();	
+	  $('.scroll-pane').jScrollPane();
+		$('.fac-row').hover(function(){
+			$(this).find("img").show();			
+			}, function(){
+			$(this).find("img").hide();
+		});
+   
+	
+
+$('.sitemap-arrow-box-collapsed').click(function(){
+		if($(this).hasClass('sitemap-arrow-box-expanded'))
+		{
+			$('.sitemapPage').slideToggle(600);
+			$(this).removeClass('sitemap-arrow-box-expanded');
+		}
+		else
+		{
+			$('.sitemapPage').slideToggle(600);
+			$(this).addClass('sitemap-arrow-box-expanded');		
+		}
+	
+});
+});
+</script>

@@ -1,0 +1,620 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="content-language" content="en" />
+	<meta http-equiv="Content-Type" content="text/x-component .htc">
+<link rel="stylesheet" type="text/css" href="css\style.css">
+<link rel="stylesheet" type="text/css" href="css\tabs.css">
+<!--link rel="stylesheet" type="text/css" href="css\plot.css"-->
+<link rel="stylesheet" type="text/css" href="css\menu.css">
+<link rel="stylesheet" type="text/css" href="css\usermanagement.css">
+<link rel="stylesheet" type="text/css" href="css\toggle.css">
+<link rel="stylesheet" type="text/css" href="js/smartspin/smartspinner.css">
+<link type="text/css" href="lib/jquery.jscrollpane.css" rel="stylesheet" media="all" />
+<!--OVERLAY CSS-->
+
+<!--**********-->
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<!--script type="text/javascript" src="js/extended_plot.js"></script>
+    <script language="javascript" type="text/javascript" src="js/jquery.flot.js"></script-->
+	<script language="javascript" type="text/javascript" src="js/tabs.js"></script>
+	<script language="javascript" type="text/javascript" src="js/upgrade.js"></script>
+	
+	<script language="javascript" type="text/javascript" src="js/usermanagement.js"></script>
+	
+	
+	
+	<script language="javascript" type="text/javascript" src="js/combomenu.js"></script>
+	<!--script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script-->
+	<script language="javascript" type="text/javascript" src="js/smartspin/smartspinner.js"></script>
+		<script language="javascript" type="text/javascript" src="js/toggle.js"></script>
+	<!--script type="text/javascript" src="js/raphael-min.js"></script-->
+		
+	<!-- the mousewheel plugin - optional to provide mousewheel support -->
+<!--script type="text/javascript" src="lib/jquery.mousewheel.js"></script>
+<!-- the jScrollPane script -->
+<!--script type="text/javascript" src="lib/jquery.jscrollpane.js"></script-->
+	<script type="text/javascript" src="js/script-configure.js"></script>
+	
+	
+	<!--OVERLAY SCRIPT-->
+		<link rel="stylesheet" type="text/css" href="js/simplemodal/css/basic.css">
+		<script type='text/javascript' src='js/simplemodal/js/simplemodal.js'></script>
+			
+	<!--******-->
+	<!--script type="text/javascript" src="js/calibration.js"></script-->
+
+	
+</head>
+<body>
+
+
+<div id="outer-wrap">	
+	<div id="inner-wrap">
+		<div class="top-nav">
+			<div class="top-nav-content">
+				<div class="left-nav">
+				<ul class="left-menu">
+					<li><a href="#">ABB <span>TOTAL</span><span class="title">FLOW<span></a> <span class="separator">|</span></li>
+					<li>
+						<div style="display:inline-block;position:relative">
+						<div><a href="#" class="T9">Operator </a><div class="down-arrow"></div></div>
+						<ul style=" left: 0;padding: 0; position: absolute;top: 25px;display:none">
+							<li style="background-color: rgb(140, 140, 140); display: block; height: 30px"><a href="#" class="T9">Administrator </a></li>
+							<li  style="background-color: rgb(140, 140, 140); display: block; height: 30px"><a href="#" class="T9">Technician </a></li>
+						</ul>
+						</div>
+						<span class="separator">|</span>
+					</li>
+					<li><a href="#">?</a></li>			
+				</ul>
+				</div>
+				<div class="right-nav">
+					<div class="inline T9">abcd@abcd.com</div>
+					<div class="down-arrow"></div>
+			
+				</div>
+			</div>	
+		</div>
+	  
+		<div class="fac-con">
+			<div class="fac-content">
+				<div class="left-con">
+					<div class="arrow-box"></div>
+					<div class="breadcrumb-text T5">Facility</div>
+					<div class="breadcrumb-arrow"></div>
+					<div class="breadcrumb-text T5">North Well 1</div>
+					<div class="breadcrumb-arrow"></div>
+					<div class="breadcrumb-text T5">Administration</div>
+				</div>
+				<div class="right-con">
+					<div class="refresh">Last Refreshed
+						<div class="time">12/28/12 at 10:00:30 AM
+						</div>
+					
+					</div>
+					<div class="monitor-btn"><a href="#"><span class="T9 monitor-text">Monitoring Off</span><div class="down-arrow"></div></a></div>
+				</div>
+           </div>				
+		</div>
+        <div class="page" >	
+	        <div class="page-content">	
+	            <div class="leftside">
+                     <div class="WebServerleftOverviewSection divRoundedCorner">
+                        <div class="leftOverviewHeaderSection">
+                        <div class="leftOverviewHeaderContent T3"> Configuration Management</div>
+                        </div>
+					</div>	
+					<div class="WebServerContentSection">
+						<div class="leftOverviewEditRowWebServer">
+                            <div class="fieldname T8">
+                                User Authentication
+                            </div>
+                            <div class="fieldvalue T7">
+                                Enabled  
+                            </div>
+							<div class="edit-pen">
+								<a class="launchLink" href="#user-auth">
+										<img class="pen" src="images/edit-pen.png" style="display: none;"></a>
+							</div>	
+									
+                            <div class="analysisTriangleEdit">
+								<img src="images/table-edit-dark.png" />
+							</div>
+									
+                        </div>
+								
+						<div class="leftOverviewEditRowWebServer">
+                            <div class='fieldname T8'>
+                                 Secure Mode
+                            </div>
+                            <div class='fieldvalue T7'>
+                                        Disabled
+
+                            </div>
+                            <div class="edit-pen">
+									   <a class="launchLink" href="#secure">
+										<img class="pen" src="images/edit-pen.png" style="display: none;"></a>
+						    </div>
+							<div class="analysisTriangleEdit">
+										 <img src="images/table-edit-dark.png" />
+							</div>
+						</div>	
+						<div class="leftOverviewEditRowWebServer">
+                            <div class='fieldname T8'>
+                                         Idle Timeout(Min)
+                            </div>
+                            <div class='fieldvalue T7'>
+                                       12
+
+                             </div>
+                            <div class="edit-pen">
+									   <a class="launchLink" href="#idletimeout">
+										<img class="pen" src="images/edit-pen.png" style="display: none;"></a>
+							</div>
+							<div class="analysisTriangleEdit">
+										 <img src="images/table-edit-dark.png" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="rightside">							
+		            <div class="htmltabs"  >
+			             <!-- The tabs -->
+			                  <ul  class="tabs ">
+				                   <li >
+					                  <a  href="#tab3">
+						                      User Mgmt
+					                  </a>
+				                   </li>
+				                   <li>
+					                  <a  href="#tab1">
+						                      Upgrade
+					                  </a>
+				                   </li>
+				              </ul>
+							 <!--User Management Content Goes Here-->
+							<div class="tabsContent" id="tab3">
+				<div class="userManagementTableOuterDiv">
+					<div class="modernTable">
+								<!-- Table Heading Div-->
+								<div class="modTableHead">
+									<!--Date/Time,Description,Oldval,Newval,SN-->
+									<div class="modTableHeadCell textCell" width="30px"><span>USERNAME</span></div>
+									<div class="modTableHeadCell textCell"><span>Privilege</span></div>				
+								</div>
+								<div class="modTableRow">
+									<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+									<div class="modTableCell textCell"  width="30px"><span>admin</span></div>
+									<div class="modTableCell textCell"><span>Admin</span></div>						
+								</div>
+								<div class="modTableRow">
+									<!--02/04/2011 2:19:51,Hold Last Analog Vals,Yes,No,12-->
+									<div class="modTableCell textCell"  width="30px"><span>abc</span></div>
+									<div class="modTableCell textCell"><span>User</span></div>
+								</div>
+								
+					</div>
+				</div>	
+				<div class="monitoring-btn">
+					<div class="btns"><a class="launchLink T9" href="#addUserOverlay">Add User</a></div>
+					<div class="btns"><a class="launchLink T9" href="#updateUserOverlay">Update Profile</a></div>
+					<div class="btns"><a class="launchLink T9" href="#deleteUserOverlay">Delete User</a></div>
+				</div>
+			
+						
+			</div>
+							<!--Ugrade content goes here-->
+							<!-- tab 1 -->
+			<div class="tabsContent" id="tab1">
+						<div class="userManagementTableOuterDiv">
+						
+							<div class="single-content">
+				   <div class="blocks-top">
+					<div class="conf-header">
+						<div class="heading T16">Last Upgrade Status</div>
+				   </div>
+					<div class="row" id="constant-od-div">
+						<div class="fieldname T8">Time</div>
+						<div class="fieldvalue T7" id="constant-od-value">6/19/2012 01:40:38 PM</div>						
+					</div>	
+                     <div class="row" id="constant-od-div">
+						<div class="fieldname T8">Description</div>
+						<div class="fieldvalue T7" id="constant-od-value">ERROR</div>						
+					</div>						
+				  </div>
+		
+				</div>
+					
+				</div>	
+						
+						<div class="showOverlay up_btn">
+							<a class="T9" href="#upgrade-orifice" class="launchLink">Upgrade</a>
+						</div>
+						
+						
+			</div><!-- end of t1 -->
+														
+			        </div>
+					
+			    </div>
+			                    
+		    </div>
+		 
+	    </div>	         
+		
+    </div>
+</div>
+	<!--ADD USER OVERLAY FOR USER MANAGEMENT START---->
+<div class="overlayBoxsmall" id="addUserOverlay">
+	<div class="overlay-headerSmall T3">Add User</div>
+	<div class="addUserWarning T15">
+		<div class="userWarningImg"></div>
+		<div class="addUserPswdWarningBig T13">
+			Please Enter Username.
+		</div>
+		<div class="addUserPswdWarningSmall T14a">
+			Username cannot be empty
+		</div>
+	</div>
+	<div class="addUserPswdWarning T15">
+		<div class="userWarningImg"></div>
+		<div class="addUserPswdWarningBig T13">
+			Please Enter Password.
+		</div>
+		<div class="addUserPswdWarningSmall T14a">
+			Password cannot be empty
+		</div>
+	</div>
+	<div class="addUserPswdMismatchWarning T15">
+		<div class="userWarningImg"></div>
+		<div class="addUserPswdWarningBig T13">
+			Passwords do not match.
+		</div>
+		<div class="addUserPswdWarningSmall T14a">
+			Re-typed password does not match
+		</div>
+	</div>
+	<div class="containerSmall">
+		<div class="overlay-topSmall">
+			<div class="overlay-midSmall">
+				<div class="userOverlayRow">
+					<div class="userOverlayRowLeft T7">
+						UserName
+					</div>
+					<div class="userManagementinput-box">
+						<input class="txtBoxAddUser" type="text">					
+					</div>
+				</div>	
+				<div class="userOverlayRow">
+					<div class="userOverlayRowLeft T7">
+						Password
+					</div>
+					<div class="userManagementinput-box">
+						<input class="txtBoxAddPswd" type="password">					
+					</div>
+				</div>	
+				<div class="userOverlayRow">
+					<div class="userOverlayRowLeft T7">
+						Re-type Password
+					</div>
+					<div class="userManagementinput-box">
+						<input class ="txtBoxAddUserRetype" type="password">					
+					</div>
+				</div>	
+				<div class="userOverlayRow">
+					<div class="userOverlayRowLeft T7">
+						Privilege
+					</div>
+					<div class="incrementboxUser">
+						<div class="input-box">												
+							<div  style='display:inline-block'>							
+								<ul id="comboLoc1">
+									<li class="firstComboItem"><a href="#">Admin</a></li>
+									<li class="lastComboItem"><a href="#">User</a></li> 								
+								</ul>															
+							</div>
+						</div>											
+					</div>
+				</div>	
+			</div>
+						
+		</div>
+	</div>	
+	<div class="overlay-footerSmall">
+			<!--<a href="#" class="closeLink">Close</a>-->
+				<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a></div>	
+				<div class="addUser-btn"><a href="#" class=" T9">Add User</a></div>
+			</div>	
+</div>
+<!----ADD USER OVERLAY FOR USER MANAGEMENT END---->	
+
+
+
+<!--UPDATE USER OVERLAY FOR USER MANAGEMENT START---->
+<div class="overlayBoxsmall" id="updateUserOverlay">
+	<div class="overlay-headerSmall T3">Update Profile</div>
+	<div class="updateUserPswdWarning">
+		<div class="userWarningImg"></div>
+		<div class="updateUserPswdWarningBig T13">
+			Please Enter Password.
+		</div>
+		<div class="updateUserPswdWarningSmall T14a">
+			Password cannot be empty
+		</div>
+	</div>
+	<div class="updateUserPswdMismatchWarning T15">
+		<div class="userWarningImg"></div>
+		<div class="updateUserPswdWarningBig T13">
+			Passwords do not match.
+		</div>
+		<div class="updateUserPswdWarningSmall T14a">
+			Re-typed password does not match
+		</div>
+	</div>
+	<div class="containerSmall ">
+		<div class="overlay-topSmall">
+			<div class="overlay-midSmall">
+				<div class="userOverlayRow">
+					<div class="userOverlayRowLeft T7">
+						User
+					</div>
+					<div class="incrementboxUser">
+						<div class="input-box">												
+							<div  style='display:inline-block'>							
+								<ul id="comboUpdateUser">
+									<li class="userFirstComboItem"><a href="#">admin</a></li>
+									<li class="userLastComboItem"><a href="#">abc</a></li> 							
+								</ul>															
+							</div>
+						</div>											
+					</div>
+				</div>	
+				<div class="userOverlayRow">
+					<div class="userOverlayRowLeft T7">
+						Attribute
+					</div>
+					<div class="incrementboxUser">
+						<div class="input-box">												
+							<div  style='display:inline-block'>							
+								<ul id="comboUpdateUserAttribute">
+									<li class="userFirstComboItem"><a href="#">Privilege</a></li>
+				
+									<li class="userLastComboItem"><a href="#">Password</a></li> 							
+								</ul>															
+							</div>
+						</div>											
+					</div>
+				</div>
+			<div class="userUpdatePassword">
+			
+				<div class="userOverlayRow">
+					<div class="userOverlayRowLeft T7">
+						New Password
+					</div>
+					<div class="userManagementinput-box">
+						<input class="txtBoxUpdateUserNewPswd" type="password">					
+					</div>
+				</div>	
+				<div class="userOverlayRow">
+					<div class="userOverlayRowLeft T7">
+						Re-type New Password
+					</div>
+					<div class="userManagementinput-box">
+						<input class ="txtBoxUpdateUserRetype" type="password">					
+					</div>
+				</div>
+			</div>
+			<div class="userUpdatePrivilege">
+				<div class="userOverlayRow">
+					<div class="userOverlayRowLeft T7">
+						Privilege
+					</div>
+					<div class="incrementboxUser">
+						<div class="input-box">												
+							<div  style='display:inline-block'>							
+								<ul id="comboUpdatePrivilege">
+									<li class="firstComboItem"><a href="#">Admin</a></li>
+									<li class="lastComboItem"><a href="#">User</a></li> 							
+								</ul>															
+							</div>
+						</div>											
+					</div>
+				</div>	
+			</div>
+			</div>
+						
+		</div>
+	</div>	
+	<div class="overlay-footerSmall">
+			<!--<a href="#" class="closeLink">Close</a>-->
+				<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a></div>	
+				<div class="updateUser-btn "><a href="#" class=" T9">Update</a></div>
+			</div>	
+</div>
+<!----UPDATE USER OVERLAY FOR USER MANAGEMENT END---->	
+
+<!--DELETE USER OVERLAY FOR USER MANAGEMENT START---->
+<div class="overlayBoxsmall" id="deleteUserOverlay">
+	<div class="overlay-headerSmall T3">Delete User</div>
+		<div class="containerSmall">
+		<div class="overlay-topSmall">
+			<div class="overlay-midSmall">
+				<div class="userOverlayRow">
+					<div class="userOverlayRowLeft T7">
+						User
+					</div>
+					<div class="incrementboxUser">
+						<div class="input-box">												
+							<div  style='display:inline-block'>							
+								<ul id="comboDeleteUser">
+									<li class="firstComboItem"><a href="#">admin</a></li>
+									<li class="lastComboItem"><a href="#">abc</a></li> 							
+								</ul>															
+							</div>
+						</div>											
+					</div>
+				</div>	
+				
+			</div>
+						
+		</div>
+	</div>	
+	<div class="overlay-footerSmall">
+			<!--<a href="#" class="closeLink">Close</a>-->
+				<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a></div>	
+				<div class="deleteUser-btn closeLink"><a href="#" class=" T9">Delete User</a></div>
+	</div>	
+</div>
+<!----DELETE USER OVERLAY FOR USER MANAGEMENT END---->	
+
+<!--OVERLAY FOR USER AUTHENTICATION STARTS--->
+
+<div class="overlayBoxsmall" id="user-auth" >
+	<div class="overlay-headerSmall T3">	
+Configuration Management
+</div>
+	
+	<div class="containerSmall">
+		<div class="overlay-topSmall">
+			<div class="overlay-midSmall">
+			    <div class="row1Small">
+                    <div class="left-text T7">User Authentication</div>
+                       <div class="incrementbox">
+											<div class="input-box">
+												<div  style='display:inline-block'>							
+													<ul id="comboLocUserAuth">
+													
+													<li class="firstComboItem"><a href="#">Enabled</a></li>
+													<li class="lastComboItem"><a href="#">Disabled</a></li>
+																				
+													</ul>															
+												</div>
+											</div>										
+						</div>
+                </div>
+				
+			</div>
+						
+		</div>
+	</div>	
+	<div class="overlay-footerSmall">
+		
+				<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a></div>	
+				<div class="save-btn closeLink"><a href="#" class=" T9">Save</a></div>
+	</div>	
+</div>	<!--OVERLAY FOR USER AUTHENTICATION END-->	
+
+<!--OVERLAY FOR SECURE MODE STARTS--->
+<div class="overlayBoxsmall" id="secure" >
+	<div class="overlay-headerSmall T3">	
+Configuration Management
+</div>
+	
+	<div class="containerSmall">
+		<div class="overlay-topSmall">
+			<div class="overlay-midSmall">
+			    <div class="row1Small">
+                    <div class="left-text T7">Secure Mode</div>
+                       <div class="incrementbox">
+											<div class="input-box">
+												<div  style='display:inline-block'>							
+													<ul id="comboLocSecure">
+													
+													<li class="firstComboItem"><a href="#">Disabled</a></li>
+													<li class="lastComboItem"><a href="#">Enabled</a></li>
+																				
+													</ul>															
+												</div>
+											</div>										
+						</div>
+                </div>
+				
+			</div>
+						
+		</div>
+	</div>		
+	<div class="overlay-footerSmall">
+		
+				<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a></div>	
+				<div class="save-btn closeLink"><a href="#" class=" T9">Save</a></div>
+    </div>	
+</div>	<!--OVERLAY FOR SECURE MODE END-->	
+
+
+
+<!--OVERLAY FOR IDLE TIMEOUT STARTS--->
+<div class="overlayBoxsmall" id="idletimeout">
+	<div class="overlay-headerSmall T3">	
+Configuration Management
+</div>
+	
+	<div class="containerSmall">
+		<div class="overlay-topSmall">
+			<div class="overlay-midSmall">
+				<div class="row1Small">
+					<div class="left-text T7">Idle Time Out</div>
+					<div class="incrementbox">
+						<div class="input-box" >
+                        <input class="textbox smartspinner" type="textbox" value="12" style="width: 100px; height: 20px; font-weight: bold;" title="1">    
+					    </div>
+				    </div>
+		          	
+						
+		        </div>
+	        </div>	
+		</div>
+    </div>
+	
+	
+	<div class="overlay-footerSmall">
+		
+				<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a></div>	
+				<div class="save-btn closeLink"><a href="#" class=" T9">Save</a></div>
+    </div>	
+</div>	<!--OVERLAY FOR IDLE TIMEOUT END-->	
+
+<!--Upgrade OVERLAY FOR ORIFICE CHANGE--->
+<div class="overlayBoxsmall" id="upgrade-orifice">
+	<div class="overlay-headerSmall T3">Upgrade </div>
+	<div class="up_container">
+		
+		<div class="up_error_row">
+			<div class="userWarningImg"></div>
+			<div class="addUserPswdWarningBig T13">
+			File Type Error.
+			</div>
+			<div class="addUserPswdWarningSmall T14a">
+			Only .xfc files are supported
+			</div>
+		</div>
+		<div class="up_row">
+			<div class="up_text T7">Choose File For Upgrade</div>
+			<div style="clear:both"></div>
+			<div class="input-box up_text">
+				<form  name="f">
+					<input type="file"  name="pic"  accept="application/zip">	
+				</form>
+			</div>
+			<div style="clear:both"></div>
+		</div>
+		<div class="progress-bar-main ">
+			<div  class="progress-bar-sub"></div>
+			<div class="up_text T7">File upload in progress...</div>
+			<div style="clear:both"></div>
+			<div class="up_text T7">Status-</div>
+			<div class="status  T7a" >1%</div>
+		</div>
+	</div>	
+	<div class="up_overlay-footerSmall">
+		<div class="cancel-btn closeLink"><a href="#" class=" T9">Cancel</a></div>	
+		<div class="save-btn up_clk"><a href="#" class=" T9">Upload</a></div>
+		<div class="abort-btn" style="display:none;"><a href="#" class=" T9">Abort</a></div>
+		<div class="done-btn" style="display:none;"><a href="#" class=" T9">Done</a></div>
+	</div>	
+</div>
+<!--Upgrade OVERLAY FOR ORIFICE CHANGE END-->
+
+</body>
+</html>		 
